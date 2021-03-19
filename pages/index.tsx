@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import { Heading } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -10,9 +11,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <Heading as="h1" lineHeight="2" size="4xl" className={styles.title}>
           Antony Kamp
-        </h1>
+        </Heading>
 
         <p className={styles.description}>
           This website is currently under construction! Stay in touch!
@@ -24,10 +25,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }
