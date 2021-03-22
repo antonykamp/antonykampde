@@ -15,7 +15,7 @@ export default function DefaultFooter() {
       as="footer"
       width="100%"
       background="#153351"
-      margin="4"
+      marginTop="4"
       paddingY={["0", "3"]}
       alignItems="center"
       fontSize={["x-small", "sm"]}
@@ -24,7 +24,7 @@ export default function DefaultFooter() {
       <Box textAlign="center" color="gray.300" m={["2", "3"]}>
         {SocialNetworks.map((item) => {
           return (
-            <Link mx="6" variant="darkLinkStyle" href={item.link}>
+            <Link key={item.link} mx="6" variant="footerLink" href={item.link}>
               <FontAwesomeIcon size="2x" icon={item.logo} />
             </Link>
           );
@@ -32,19 +32,19 @@ export default function DefaultFooter() {
       </Box>
       <Text textAlign="center" m={["1", "2"]} textColor="gray.300">
         {"© 2021 Antony Kamp. "}
-        <Link variant="darkLinkStyle" href="legal">
+        <Link variant="footerLink" href="legal">
           Impressum
         </Link>
         {". "}
-        <Link variant="darkLinkStyle" href="data-protection">
+        <Link variant="footerLink" href="data-protection">
           Datenschutz
         </Link>
         {" Powered by "}
-        <Link variant="darkLinkStyle" href="https://nextjs.org/">
+        <Link variant="footerLink" href="https://nextjs.org/">
           next.js
         </Link>
         {", "}
-        <Link variant="darkLinkStyle" href="https://vercel.com/">
+        <Link variant="footerLink" href="https://vercel.com/">
           vercel
         </Link>
       </Text>

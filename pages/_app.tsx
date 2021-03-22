@@ -13,7 +13,7 @@ const customTheme = extendTheme({
         }
       },
       variants: {
-        darkLinkStyle: {
+        footerLink: {
           _hover: {
             color: "white",
             textShadow: "0.3px 0.3px white",
