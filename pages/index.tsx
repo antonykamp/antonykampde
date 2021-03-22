@@ -1,7 +1,31 @@
 import { Wrap, Box, Heading, Stack, Text, WrapItem } from "@chakra-ui/react";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../components/layout";
-import {ProjectBoxHome, ProjectBox} from "../components/projectBox";
+import {ProjectBoxHome, ProjectTags, Project, ProjectBox} from "../components/projectBox";
 import Skill from "../components/skill";
+
+const symfit: Project = {
+  name: "symfit",
+  introduction: "is a great project",
+  tags: [
+    ProjectTags.python,
+    ProjectTags.science
+  ],
+  sections: [
+    {
+      title: "Goal",
+      content: "we have many goals"
+    }
+  ],
+  links: [
+    {
+      name: "GitHub",
+      color: "gray",
+      link: "github.com/tbuLi/symfit",
+      logo: faGithub
+    }
+  ],
+}
 
 export default function Home() {
   return (
@@ -28,10 +52,10 @@ export default function Home() {
           <Skill skillName="Fun" skillLevel={70}/>
         </Stack>
         <WrapItem verticalAlign="middle">
-        <ProjectBoxHome projectName="symfit" tags={["python", "science"]} introduction="A great project"/>
+        <ProjectBoxHome {...symfit}/>
         </WrapItem>
         <WrapItem verticalAlign="middle">
-        <ProjectBoxHome projectName="activity" tags={["blitz"]} introduction="Another great project" isProject/>
+        <ProjectBoxHome name="activity" tags={[ProjectTags.blitz]} introduction="Another great project" isProject/>
         </WrapItem>
         <WrapItem align="middle">
         <Stack textAlign="left" spacing="3" width="sm">

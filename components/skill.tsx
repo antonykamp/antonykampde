@@ -1,6 +1,10 @@
 import { Heading, Stack, Text, Box, Flex, Divider, Link, LinkBox, LinkOverlay, Progress, Spacer } from "@chakra-ui/react";
 
-export default function Skill({ skillName, skillLevel }){
+interface SkillProps {
+    skillName: string,
+    skillLevel: number
+}
+export default function Skill({ skillName, skillLevel }: SkillProps){
     return (
         <Flex direction="row" alignItems="center">
             <Text as="i" fontSize="lg">{skillName}</Text>

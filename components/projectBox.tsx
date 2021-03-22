@@ -2,30 +2,63 @@ import {
   Heading,
   Stack,
   Text,
-  Box,
   Badge,
-  Divider,
-  Link,
   LinkBox,
   LinkOverlay,
   Tag,
   TagLeftIcon,
   TagLabel,
-  Button,
+  useDisclosure,
+  Collapse,
 } from "@chakra-ui/react";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-const tagNameColor = {
-  python: "blue",
-  science: "cyan",
-  blitz: "orange",
-};
+export interface Project {
+  name: string,
+  introduction: string,
+  tags: ProjectTags[]
+  sections: ProjectSection[],
+  links: ProjectLink[]
+}
 
-export function ProjectHead({ projectName, tags, introduction }) {
+export enum ProjectTags {
+  python = "python",
+  blitz = "blitz",
+  science = "cyan"
+}
+
+interface ProjectSection {
+  title: string;
+  content: string;
+}
+
+interface ProjectLink {
+  name: string;
+  link: string;
+  logo: IconDefinition;
+  color: string;
+}
+
+interface ProjectHeadProps {
+  name: string;
+  tags: ProjectTags[];
+  introduction: string;
+}
+export function ProjectHead({
+  name,
+  tags,
+  introduction,
+}: ProjectHeadProps) {
+  const tagNameColor = {
+    python: "blue",
+    science: "science",
+    blitz: "orange",
+  };
   return (
     <Stack paddingX="5">
-      <Heading size="lg">{projectName}</Heading>
+      <Heading size="lg">{name}</Heading>
       <Stack direction="row">
         {tags.map((tag) => {
           return <Badge colorScheme={tagNameColor[tag]}>{tag}</Badge>;
@@ -36,7 +69,11 @@ export function ProjectHead({ projectName, tags, introduction }) {
   );
 }
 
-export function ProjectTail({ sections = [], links = [] }) {
+interface ProjectTailProps {
+  sections: ProjectSection[];
+  links: ProjectLink[];
+}
+export function ProjectTail({ sections, links }: ProjectTailProps) {
   return (
     <Stack paddingX="5">
       {sections.map((section) => {
@@ -48,10 +85,17 @@ export function ProjectTail({ sections = [], links = [] }) {
         );
       })}
       <Stack direction="row">
-        {links.map(({name, link, logo, color}) => {
+        {links.map(({ name, link, logo, color }) => {
           return (
-            <Tag as="a" href={link} size="sm" key={link} variant="solid" colorScheme={color}>
-              <TagLeftIcon boxSize="12px" as={FontAwesomeIcon} icon={logo}/>
+            <Tag
+              as="a"
+              href={link}
+              size="sm"
+              key={link}
+              variant="solid"
+              colorScheme={color}
+            >
+              <TagLeftIcon boxSize="12px" as={FontAwesomeIcon} icon={logo} />
               <TagLabel>{name}</TagLabel>
             </Tag>
           );
@@ -62,36 +106,65 @@ export function ProjectTail({ sections = [], links = [] }) {
 }
 
 export function ProjectBox({
-    projectName,
-    tags,
-    introduction,
-    sections,
-    links
-  }) {
-    const [isBig, setBig] = useState(false)
-
-    return (
-        <Stack as="button" onClick={(_) => setBig(!isBig)} textAlign="left" width="sm" spacing="5" paddingY="5" borderWidth="2px" borderRadius="lg">
-            <ProjectHead
-                projectName={projectName}
-                tags={tags}
-                introduction={introduction}
-            />
-            {isBig && (<ProjectTail sections={sections} links={links}/>)}
-        </Stack>
-    )
-  }
-
-export function ProjectBoxHome({
-  projectName,
+  name,
   tags,
   introduction,
-  isProject = false,
+  sections,
+  links,
+}: {
+  name: string;
+  tags: ProjectTags[];
+  introduction: string;
+  sections: ProjectSection[];
+  links: ProjectLink[];
 }) {
+  const { isOpen, onToggle } = useDisclosure()
   return (
-    <Stack textAlign="left" width="sm" paddingTop="5" borderWidth="2px" borderRadius="lg">
+    <Stack
+      as="button"
+      onClick={onToggle}
+      textAlign="left"
+      width="sm"
+      spacing="5"
+      paddingY="5"
+      borderWidth="2px"
+      borderRadius="lg"
+    >
       <ProjectHead
-        projectName={projectName}
+        name={name}
+        tags={tags}
+        introduction={introduction}
+      />
+      <Collapse in={isOpen} animateOpacity>
+        <ProjectTail sections={sections} links={links} />
+      </Collapse>
+    </Stack>
+  );
+}
+
+
+interface ProjectBoxHome {
+  name: string,
+  tags: ProjectTags[],
+  introduction: string,
+  isProject?: boolean
+}
+export function ProjectBoxHome({
+  name,
+  tags,
+  introduction,
+  isProject = false
+}: ProjectBoxHome) {
+  return (
+    <Stack
+      textAlign="left"
+      width="sm"
+      paddingTop="5"
+      borderWidth="2px"
+      borderRadius="lg"
+    >
+      <ProjectHead
+        name={name}
         tags={tags}
         introduction={introduction}
       />
