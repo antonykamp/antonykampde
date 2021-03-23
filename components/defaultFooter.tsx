@@ -32,11 +32,11 @@ export default function DefaultFooter() {
       </Box>
       <Text textAlign="center" m={["1", "2"]} textColor="gray.300">
         {"© 2021 Antony Kamp. "}
-        <Link variant="footerLink" href="legal">
+        <Link variant="footerLink" href="impressum">
           Impressum
         </Link>
         {". "}
-        <Link variant="footerLink" href="data-protection">
+        <Link variant="footerLink" href="datenschutz">
           Datenschutz
         </Link>
         {" Powered by "}
