@@ -20,15 +20,19 @@ import _activity from "../public/projects/activity.json";
 import path from "path";
 import { getBioData } from "../lib/getBioData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AwardBox, AwardItem } from "../components/awardBox";
+import { getAwardData } from "../lib/getAwardData";
 
 export default function Home({
   project,
   contribution,
   bio,
+  awards
 }: {
   project: Project;
   contribution: Project;
   bio: BioItem[];
+  awards: AwardItem[]
 }) {
   return (
     <Layout head>
@@ -95,6 +99,27 @@ export default function Home({
             })}
           </Stack>
         </Stack>
+
+        <Stack spacing="10">
+          <Heading size="2xl">Awards</Heading>
+          <Stack spacing="5">
+            {awards.map((awardItem) => {
+              return (
+                <Flex align="center" direction="row">
+                  <Icon
+                    marginRight="10"
+                    size="2x"
+                    as={FontAwesomeIcon}
+                    icon={["fas", "chevron-right"]}
+                    color="#153351"
+                  />
+                  <AwardBox key={awardItem.title} {...awardItem} />
+                </Flex>
+              );
+            })}
+          </Stack>
+        </Stack>
+
       </Stack>
     </Layout>
   );
@@ -113,7 +138,10 @@ export async function getStaticProps(context) {
   const bioFile = path.join(process.cwd(), "public/bio.json");
   const bio = getBioData(bioFile);
 
+  const awardFile = path.join(process.cwd(), "public/awards.json");
+  const awards = getAwardData(awardFile);
+
   return {
-    props: { project, contribution, bio },
+    props: { project, contribution, bio, awards },
   };
 }
