@@ -1,10 +1,11 @@
 import { Wrap, Box, Heading, Stack, Text, WrapItem } from "@chakra-ui/react";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../components/layout";
 import {ProjectBoxHome, ProjectTags, Project, ProjectBox} from "../components/projectBox";
 import Skill from "../components/skill";
+import { getProjectData } from "../lib/getProjectData";
 import _symfit from "../public/contributions/symfit.json"
 import _activity from "../public/projects/activity.json"
+import path from 'path'
 
 export default function Home({project, contribution}: {project: Project, contribution: Project}) {
   return (
@@ -51,8 +52,12 @@ export default function Home({project, contribution}: {project: Project, contrib
 }
 
 export async function getStaticProps(context){
-  const contribution = _symfit as Project
-  const project = _activity as Project
+  const contributionFile = path.join(process.cwd(), "public/contributions/symfit.json")
+  const contribution = getProjectData(contributionFile)
+
+  const projectFile = path.join(process.cwd(), "public/projects/activity.json")
+  const project = getProjectData(projectFile)
+
   return {
     props: {project, contribution }
   }
