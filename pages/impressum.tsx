@@ -1,4 +1,5 @@
-import { Heading, Link, Text, Stack } from "@chakra-ui/layout";
+import { Heading, Text, Stack } from "@chakra-ui/layout";
+import Link from "next/link";
 import Layout from "../components/layout";
 
 export default function Impressum() {
@@ -21,17 +22,16 @@ export default function Impressum() {
           </Heading>
           <Text>
             E-Mail-Adresse:{" "}
-            <a href="mailto:info@antonykamp.de">info@antonykamp.de</a>.
+            <Link href="mailto:info@antonykamp.de">
+              <a>info@antonykamp.de</a>
+            </Link>
           </Text>
         </Stack>
-        <Link
-          href="https://datenschutz-generator.de/?l=de"
-          title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
-          Schwenke
+        <Link href="https://datenschutz-generator.de/?l=de">
+          <a>
+            Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
+            Schwenke
+          </a>
         </Link>
       </Stack>
     </Layout>

@@ -1,8 +1,10 @@
-import { Link, Text, Box } from "@chakra-ui/react";
+import { Text, Box } from "@chakra-ui/react";
+import Link from "next/link";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { dom } from "@fortawesome/fontawesome-svg-core";
+import styles from "./defaultFooter.module.css";
 
 const SocialNetworks = [
   { logo: faEnvelope, link: "mailto:info@antonykamp.de" },
@@ -24,28 +26,30 @@ export default function DefaultFooter() {
       <Box textAlign="center" color="gray.300" m={["2", "3"]}>
         {SocialNetworks.map((item) => {
           return (
-            <Link key={item.link} mx="6" variant="footerLink" href={item.link}>
-              <FontAwesomeIcon size="2x" icon={item.logo} />
+            <Link key={item.link} href={item.link}>
+              <a className={styles.footerLink}>
+                <FontAwesomeIcon size="2x" icon={item.logo} />
+              </a>
             </Link>
           );
         })}
       </Box>
       <Text textAlign="center" m={["1", "2"]} textColor="gray.300">
         {"© 2021 Antony Kamp. "}
-        <Link variant="footerLink" href="impressum">
-          Impressum
+        <Link href="impressum">
+          <a className={styles.footerLink}>Impressum</a>
         </Link>
         {". "}
-        <Link variant="footerLink" href="datenschutz">
-          Datenschutz
+        <Link href="datenschutz">
+          <a className={styles.footerLink}>Datenschutz</a>
         </Link>
         {" Powered by "}
-        <Link variant="footerLink" href="https://nextjs.org/">
-          next.js
+        <Link href="https://nextjs.org/">
+          <a className={styles.footerLink}>next.js</a>
         </Link>
         {", "}
-        <Link variant="footerLink" href="https://vercel.com/">
-          vercel
+        <Link href="https://vercel.com/">
+          <a className={styles.footerLink}>vercel</a>
         </Link>
       </Text>
     </Box>

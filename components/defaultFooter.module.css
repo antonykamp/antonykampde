@@ -1,0 +1,10 @@
+.footerLink {
+    margin-top: 6;
+    margin-bottom: 6;
+}
+
+.footerLink:hover {
+    color: white;
+    text-shadow: 0.3px 0.3px white;
+    text-decoration: none;  
+}

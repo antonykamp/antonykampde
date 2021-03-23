@@ -4,13 +4,13 @@ import {
   Flex,
   Stack,
   Text,
-  Link,
   Heading,
   Icon,
   ListItem,
   List,
   ListIcon,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Datenschutz() {
@@ -36,7 +36,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m1870">Einleitung</Link>
+            <Link href="#m1870">
+              <a>Einleitung</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -44,7 +46,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m3">Verantwortlicher</Link>
+            <Link href="#m3">
+              <a>Verantwortlicher</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -53,7 +57,9 @@ export default function Datenschutz() {
               color="brand.900"
             ></ListIcon>
 
-            <Link href="#mOverview">Übersicht der Verarbeitungen</Link>
+            <Link href="#mOverview">
+              <a>Übersicht der Verarbeitungen</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -61,7 +67,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m13">Maßgebliche Rechtsgrundlagen</Link>
+            <Link href="#m13">
+              <a>Maßgebliche Rechtsgrundlagen</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -69,7 +77,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m27">Sicherheitsmaßnahmen</Link>
+            <Link href="#m27">
+              <a>Sicherheitsmaßnahmen</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -77,7 +87,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m25">Übermittlung von personenbezogenen Daten</Link>
+            <Link href="#m25">
+              <a>Übermittlung von personenbezogenen Daten</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -85,7 +97,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m24">Datenverarbeitung in Drittländern</Link>
+            <Link href="#m24">
+              <a>Datenverarbeitung in Drittländern</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -93,7 +107,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m134">Einsatz von Cookies</Link>
+            <Link href="#m134">
+              <a>Einsatz von Cookies</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -101,7 +117,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m317">Geschäftliche Leistungen</Link>
+            <Link href="#m317">
+              <a>Geschäftliche Leistungen</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -110,7 +128,7 @@ export default function Datenschutz() {
               color="brand.900"
             ></ListIcon>
             <Link href="#m225">
-              Bereitstellung des Onlineangebotes und Webhosting
+              <a>Bereitstellung des Onlineangebotes und Webhosting</a>
             </Link>
           </ListItem>
           <ListItem>
@@ -119,7 +137,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m12">Löschung von Daten</Link>
+            <Link href="#m12">
+              <a>Löschung von Daten</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -128,7 +148,7 @@ export default function Datenschutz() {
               color="brand.900"
             ></ListIcon>
             <Link href="#m15">
-              Änderung und Aktualisierung der Datenschutzerklärung
+              <a>Änderung und Aktualisierung der Datenschutzerklärung</a>
             </Link>
           </ListItem>
           <ListItem>
@@ -137,7 +157,9 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m10">Rechte der betroffenen Personen</Link>
+            <Link href="#m10">
+              <a>Rechte der betroffenen Personen</a>
+            </Link>
           </ListItem>
           <ListItem>
             <ListIcon
@@ -145,27 +167,24 @@ export default function Datenschutz() {
               icon={["fas", "chevron-right"]}
               color="brand.900"
             ></ListIcon>
-            <Link href="#m42">Begriffsdefinitionen</Link>
+            <Link href="#m42">
+              <a>Begriffsdefinitionen</a>
+            </Link>
           </ListItem>
         </List>
         <Heading id="m3">Verantwortlicher</Heading>
         <Stack spacing="0">
-            <Text>
-            Antony Kamp
-            </Text>
-            <Text>
-                Stahnsdorferstraße 142B
-            </Text>
-            <Text>
-                14482 Potsdam
-            </Text>
-            <Text>
-                Germany
-            </Text>
+          <Text>Antony Kamp</Text>
+          <Text>Stahnsdorferstraße 142B</Text>
+          <Text>14482 Potsdam</Text>
+          <Text>Germany</Text>
         </Stack>
         <Text>
           E-Mail-Adresse:{" "}
-          <Link href="mailto:info@antonykamp.de">info@antonykamp.de</Link>.
+          <Link href="mailto:info@antonykamp.de">
+            <a>info@antonykamp.de</a>
+          </Link>
+          .
         </Text>
         <Heading id="mOverview">Übersicht der Verarbeitungen</Heading>
         <Text>
@@ -440,11 +459,10 @@ export default function Datenschutz() {
           der EU-Kommission, beim Vorliegen von Zertifizierungen oder
           verbindlicher internen Datenschutzvorschriften verarbeiten (Art. 44
           bis 49 DSGVO, Informationsseite der EU-Kommission:{" "}
-          <Link
-            href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de"
-            target="_blank"
-          >
-            https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de
+          <Link href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de">
+            <a>
+              https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de
+            </a>
           </Link>
           ).
         </Text>
@@ -585,12 +603,12 @@ export default function Datenschutz() {
           Cookies zu Zwecken des Onlinemarketings kann auch mittels einer
           Vielzahl von Diensten, vor allem im Fall des Trackings, über die
           Webseiten{" "}
-          <Link href="https://optout.aboutads.info" target="_blank">
-            https://optout.aboutads.info
+          <Link href="https://optout.aboutads.info">
+            <a>https://optout.aboutads.info</a>
           </Link>{" "}
           und{" "}
-          <Link href="https://www.youronlinechoices.com/" target="_blank">
-            https://www.youronlinechoices.com/
+          <Link href="https://www.youronlinechoices.com/">
+            <a>https://www.youronlinechoices.com/</a>
           </Link>{" "}
           erklärt werden. Daneben können Sie weitere Widerspruchshinweise im
           Rahmen der Angaben zu den eingesetzten Dienstleistern und Cookies
@@ -1014,14 +1032,11 @@ export default function Datenschutz() {
           </ListItem>
         </List>
         <Text>
-          <Link
-            href="https://datenschutz-generator.de/?l=de"
-            title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
-            Schwenke
+          <Link href="https://datenschutz-generator.de/?l=de">
+            <a>
+              Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
+              Schwenke
+            </a>
           </Link>
         </Text>
       </Stack>

@@ -1,5 +1,7 @@
-import { Flex, Heading, Link, Text, Box } from "@chakra-ui/react";
+import { Flex, Heading, Text, Box } from "@chakra-ui/react";
 import NextImage from "next/image";
+import Link from "next/link";
+import styles from "./defaultHeader.module.css";
 
 export default function DefaultHeader({ head = false }) {
   return (
@@ -11,17 +13,16 @@ export default function DefaultHeader({ head = false }) {
         verticalAlign="bottom"
         direction={["column", "row"]}
       >
-        <Box borderRadius="full" overflow="hidden">
-          <NextImage
-            src="/profile.jpg"
-            alt="Antony Kamp"
-            priority={true}
-            loading="eager"
-            quality="100"
-            width={head ? 192 : 128}
-            height={head ? 192 : 128}
-          />
-        </Box>
+        <NextImage
+          src="/profile.jpg"
+          alt="Antony Kamp"
+          priority={true}
+          loading="eager"
+          quality="100"
+          width={head ? 192 : 128}
+          height={head ? 192 : 128}
+          className={styles.roundedImage}
+        />
         <Flex
           padding={["1", "5"]}
           direction="column"
@@ -38,11 +39,17 @@ export default function DefaultHeader({ head = false }) {
             Antony Kamp
           </Heading>
           <Text fontSize={"2xl"}>
-            <Link href="/">about</Link>
+            <Link href="/">
+              <a>about</a>
+            </Link>
             {" - "}
-            <Link href="/projects">projects</Link>
+            <Link href="/projects">
+              <a>projects</a>
+            </Link>
             {" - "}
-            <Link href="/contributions">contributions</Link>
+            <Link href="/contributions">
+              <a>contributions</a>
+            </Link>
           </Text>
         </Flex>
       </Flex>
