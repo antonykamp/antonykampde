@@ -11,16 +11,16 @@ import {
   useDisclosure,
   Collapse,
 } from "@chakra-ui/react";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { IconName, IconPrefix } from "@fortawesome/fontawesome-common-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 
 export interface Project {
   name: string,
   introduction: string,
   tags: ProjectTags[]
   sections: ProjectSection[],
-  links: ProjectLink[]
+  links: ProjectLink[],
+  isProject?: boolean
 }
 
 export enum ProjectTags {
@@ -37,7 +37,7 @@ interface ProjectSection {
 interface ProjectLink {
   name: string;
   link: string;
-  logo: IconDefinition;
+  logo:[IconPrefix, IconName]
   color: string;
 }
 
@@ -111,13 +111,7 @@ export function ProjectBox({
   introduction,
   sections,
   links,
-}: {
-  name: string;
-  tags: ProjectTags[];
-  introduction: string;
-  sections: ProjectSection[];
-  links: ProjectLink[];
-}) {
+}: Project) {
   const { isOpen, onToggle } = useDisclosure()
   return (
     <Stack

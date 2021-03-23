@@ -1,0 +1,19 @@
+{
+  "name": "symfit",
+  "introduction": "is a great project",
+  "tags": ["python", "science"],
+  "sections": [
+    {
+      "title": "Goal",
+      "content": "we have many goals"
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "color": "gray",
+      "link": "github.com/tbuLi/symfit",
+      "logo": ["fab", "github"]
+    }
+  ]
+}

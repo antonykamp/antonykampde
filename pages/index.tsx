@@ -3,31 +3,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../components/layout";
 import {ProjectBoxHome, ProjectTags, Project, ProjectBox} from "../components/projectBox";
 import Skill from "../components/skill";
+import _symfit from "../public/contributions/symfit.json"
+import _activity from "../public/projects/activity.json"
 
-const symfit: Project = {
-  name: "symfit",
-  introduction: "is a great project",
-  tags: [
-    ProjectTags.python,
-    ProjectTags.science
-  ],
-  sections: [
-    {
-      title: "Goal",
-      content: "we have many goals"
-    }
-  ],
-  links: [
-    {
-      name: "GitHub",
-      color: "gray",
-      link: "github.com/tbuLi/symfit",
-      logo: faGithub
-    }
-  ],
-}
-
-export default function Home() {
+export default function Home({project, contribution}: {project: Project, contribution: Project}) {
   return (
     <Layout head>
       <Stack maxWidth={["100%","4xl"]} spacing="20" alignItems="center" textAlign="center">
@@ -52,10 +31,10 @@ export default function Home() {
           <Skill skillName="Fun" skillLevel={70}/>
         </Stack>
         <WrapItem verticalAlign="middle">
-        <ProjectBoxHome {...symfit}/>
+        <ProjectBoxHome {...project}/>
         </WrapItem>
         <WrapItem verticalAlign="middle">
-        <ProjectBoxHome name="activity" tags={[ProjectTags.blitz]} introduction="Another great project" isProject/>
+        <ProjectBoxHome {...contribution}/>
         </WrapItem>
         <WrapItem align="middle">
         <Stack textAlign="left" spacing="3" width="sm">
@@ -69,4 +48,12 @@ export default function Home() {
       </Stack>
     </Layout>
   );
+}
+
+export async function getStaticProps(context){
+  const contribution = _symfit as Project
+  const project = _activity as Project
+  return {
+    props: {project, contribution }
+  }
 }

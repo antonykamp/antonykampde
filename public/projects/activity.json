@@ -1,0 +1,21 @@
+{
+    "name": "activity",
+    "introduction": "is a great project",
+    "tags": ["blitz"],
+    "sections": [
+      {
+        "title": "Goal",
+        "content": "we have many goals"
+      }
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "color": "gray",
+        "link": "github.com/antonykamp/activity",
+        "logo": ["fab", "github"]
+      }
+    ],
+    "isProject": true
+  }
+  
