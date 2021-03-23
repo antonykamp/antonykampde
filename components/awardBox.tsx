@@ -13,10 +13,10 @@ export function AwardBox({ date, title, location, locationLink }: AwardItem) {
       <Text fontWeight="bold" fontSize="2xl">
         {locationLink ? <Link href={locationLink}>{location}</Link> : location}
       </Text>
-      <Text fontSize="xl">
+      <Text fontSize="xl" color="brand.900">
       {title}
       </Text>
-      <Text colorScheme="gray">{date}</Text>
+      <Text color="gray">{date}</Text>
     </Stack>
   );
 }

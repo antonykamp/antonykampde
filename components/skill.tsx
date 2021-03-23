@@ -10,7 +10,7 @@ export default function Skill({ skillName, skillLevel }: SkillProps){
             <Text as="i" fontSize="lg">{skillName}</Text>
             <Spacer/>
             <Box borderWidth="1.5px" bgColor="gray.50" borderRadius="lg" height="3" width="18em" verticalAlign="center">
-                <Box borderWidth="1.5px" bgColor="#153351" borderRadius="lg" width={((skillLevel*18)/100) + "em"} height="3"/>
+                <Box borderWidth="1.5px" bgColor="brand.900" borderRadius="lg" width={((skillLevel*18)/100) + "em"} height="3"/>
             </Box>
         </Flex>
     )

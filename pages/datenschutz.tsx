@@ -34,7 +34,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m1870">Einleitung</Link>
           </ListItem>
@@ -42,7 +42,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m3">Verantwortlicher</Link>
           </ListItem>
@@ -50,7 +50,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
 
             <Link href="#mOverview">Übersicht der Verarbeitungen</Link>
@@ -59,7 +59,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m13">Maßgebliche Rechtsgrundlagen</Link>
           </ListItem>
@@ -67,7 +67,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m27">Sicherheitsmaßnahmen</Link>
           </ListItem>
@@ -75,7 +75,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m25">Übermittlung von personenbezogenen Daten</Link>
           </ListItem>
@@ -83,7 +83,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m24">Datenverarbeitung in Drittländern</Link>
           </ListItem>
@@ -91,7 +91,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m134">Einsatz von Cookies</Link>
           </ListItem>
@@ -99,7 +99,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m317">Geschäftliche Leistungen</Link>
           </ListItem>
@@ -107,7 +107,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m225">
               Bereitstellung des Onlineangebotes und Webhosting
@@ -117,7 +117,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m12">Löschung von Daten</Link>
           </ListItem>
@@ -125,7 +125,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m15">
               Änderung und Aktualisierung der Datenschutzerklärung
@@ -135,7 +135,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m10">Rechte der betroffenen Personen</Link>
           </ListItem>
@@ -143,7 +143,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <Link href="#m42">Begriffsdefinitionen</Link>
           </ListItem>
@@ -179,7 +179,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Bestandsdaten (z.B. Namen, Adressen).
           </ListItem>
@@ -187,7 +187,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Inhaltsdaten (z.B. Eingaben in Onlineformularen).
           </ListItem>
@@ -195,7 +195,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Kontaktdaten (z.B. E-Mail, Telefonnummern).
           </ListItem>
@@ -203,7 +203,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).
           </ListItem>
@@ -211,7 +211,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten,
             Zugriffszeiten).
@@ -220,7 +220,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Vertragsdaten (z.B. Vertragsgegenstand, Laufzeit, Kundenkategorie).
           </ListItem>
@@ -228,7 +228,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Zahlungsdaten (z.B. Bankverbindungen, Rechnungen, Zahlungshistorie).
           </ListItem>
@@ -239,7 +239,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Geschäfts- und Vertragspartner.
           </ListItem>
@@ -247,7 +247,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Interessenten.
           </ListItem>
@@ -255,7 +255,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).
           </ListItem>
@@ -266,7 +266,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
           </ListItem>
@@ -274,7 +274,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Büro- und Organisationsverfahren.
           </ListItem>
@@ -282,7 +282,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Kontaktanfragen und Kommunikation.
           </ListItem>
@@ -290,7 +290,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Erbringung vertragliche Leistungen und Kundenservice.
           </ListItem>
@@ -298,7 +298,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             Verwaltung und Beantwortung von Anfragen.
           </ListItem>
@@ -320,7 +320,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a. DSGVO)</strong> -
             Die betroffene Person hat ihre Einwilligung in die Verarbeitung der
@@ -331,7 +331,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1
@@ -346,7 +346,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c. DSGVO)
@@ -358,7 +358,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO)
@@ -472,7 +472,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Temporäre Cookies (auch: Session- oder Sitzungs-Cookies):
@@ -485,7 +485,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Permanente Cookies:</strong>&nbsp;Permanente Cookies bleiben
             auch nach dem Schließen des Browsers gespeichert. So kann
@@ -499,7 +499,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>First-Party-Cookies:</strong>&nbsp;First-Party-Cookies
             werden von uns selbst gesetzt.
@@ -508,7 +508,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Third-Party-Cookies (auch: Drittanbieter-Cookies)</strong>:
             Drittanbieter-Cookies werden hauptsächlich von Werbetreibenden (sog.
@@ -518,7 +518,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Notwendige (auch: essentielle oder unbedingt erforderliche)
@@ -532,7 +532,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Statistik-, Marketing- und Personalisierungs-Cookies
@@ -624,7 +624,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z.B.
             besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten),
@@ -634,7 +634,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Betroffene Personen:</strong> Nutzer (z.B.
             Webseitenbesucher, Nutzer von Onlinediensten).
@@ -643,7 +643,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1
             lit. a. DSGVO), Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f.
@@ -700,7 +700,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z.B. Namen,
             Adressen), Zahlungsdaten (z.B. Bankverbindungen, Rechnungen,
@@ -711,7 +711,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Betroffene Personen:</strong> Interessenten, Geschäfts- und
             Vertragspartner.
@@ -720,7 +720,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Zwecke der Verarbeitung:</strong> Erbringung vertragliche
             Leistungen und Kundenservice, Kontaktanfragen und Kommunikation,
@@ -731,7 +731,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Rechtsgrundlagen:</strong> Vertragserfüllung und
             vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b. DSGVO),
@@ -782,7 +782,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Verarbeitete Datenarten:</strong> Inhaltsdaten (z.B.
             Eingaben in Onlineformularen), Nutzungsdaten (z.B. besuchte
@@ -793,7 +793,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Betroffene Personen:</strong> Nutzer (z.B.
             Webseitenbesucher, Nutzer von Onlinediensten).
@@ -802,7 +802,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Zwecke der Verarbeitung:</strong> Bereitstellung unseres
             Onlineangebotes und Nutzerfreundlichkeit.
@@ -811,7 +811,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
             Abs. 1 S. 1 lit. f. DSGVO).
@@ -868,7 +868,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Widerspruchsrecht: Sie haben das Recht, aus Gründen, die sich aus
@@ -889,7 +889,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Widerrufsrecht bei Einwilligungen:</strong> Sie haben das
             Recht, erteilte Einwilligungen jederzeit zu widerrufen.
@@ -898,7 +898,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Auskunftsrecht:</strong> Sie haben das Recht, eine
             Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet
@@ -910,7 +910,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Recht auf Berichtigung:</strong> Sie haben entsprechend den
             gesetzlichen Vorgaben das Recht, die Vervollständigung der Sie
@@ -921,7 +921,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>
               Recht auf Löschung und Einschränkung der Verarbeitung:
@@ -935,7 +935,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das
             Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach
@@ -947,7 +947,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Beschwerde bei Aufsichtsbehörde:</strong> Sie haben
             unbeschadet eines anderweitigen verwaltungsrechtlichen oder
@@ -973,7 +973,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Personenbezogene Daten:</strong> "Personenbezogene Daten“
             sind alle Informationen, die sich auf eine identifizierte oder
@@ -991,7 +991,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Verantwortlicher:</strong> Als "Verantwortlicher“ wird die
             natürliche oder juristische Person, Behörde, Einrichtung oder andere
@@ -1003,7 +1003,7 @@ export default function Datenschutz() {
             <ListIcon
               as={FontAwesomeIcon}
               icon={["fas", "chevron-right"]}
-              color="#153351"
+              color="brand.900"
             ></ListIcon>
             <strong>Verarbeitung:</strong> "Verarbeitung" ist jeder mit oder
             ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede

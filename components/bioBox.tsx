@@ -19,7 +19,7 @@ export function BioBox({
     <Stack textAlign="left" spacing="0">
       <Text fontWeight="bold" fontSize="2xl">{startDate}{endDate && (" - " + endDate)}</Text>
       <Text fontSize="xl">
-          {jobDescription + " @"}{locationLink? (<Link href={locationLink}>{location}</Link>): location}
+          {jobDescription + " @"}{locationLink? (<Link color="brand.900" href={locationLink}>{location}</Link>): location}
       </Text>
     </Stack>
   );

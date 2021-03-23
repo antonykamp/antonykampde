@@ -8,12 +8,29 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, fas)
 
 const customTheme = extendTheme({
+  colors : {
+    brand: {
+      900: "#153351",
+      800: "#273f5c",
+      700: "#384c68",
+      600: "#475a73",
+      500: "#57677f",
+      400: "#67758b",
+      300: "#778398",
+      200: "#8792a4",
+      100: "#98a1b1",
+      75: "#a8b0bd",
+      50: "#cacfd7",
+      25: "#dcdfe4",
+      0: "#ffffff" 
+    }
+  },
   components: {
     Link: {
       baseStyle: {
         _hover: {
-          color: "#153351",
-          textShadow: "0.3px 0.3px #153351",
+          color: "brand.800",
+          textShadow: "0.3px 0.3px brand.800",
           textDecoration: 'none'
         }
       },

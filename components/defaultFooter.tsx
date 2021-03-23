@@ -14,7 +14,7 @@ export default function DefaultFooter() {
     <Box
       as="footer"
       width="100%"
-      background="#153351"
+      background="brand.900"
       marginTop="4"
       paddingY={["0", "3"]}
       alignItems="center"

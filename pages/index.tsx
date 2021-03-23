@@ -91,7 +91,7 @@ export default function Home({
                     size="2x"
                     as={FontAwesomeIcon}
                     icon={["fas", "chevron-right"]}
-                    color="#153351"
+                    color="brand.900"
                   />
                   <BioBox key={bioItem.startDate} {...bioItem} />
                 </Flex>
@@ -111,7 +111,7 @@ export default function Home({
                     size="2x"
                     as={FontAwesomeIcon}
                     icon={["fas", "chevron-right"]}
-                    color="#153351"
+                    color="brand.900"
                   />
                   <AwardBox key={awardItem.title} {...awardItem} />
                 </Flex>
