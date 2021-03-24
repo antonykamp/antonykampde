@@ -1,17 +1,5 @@
-import {
-  Wrap,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-  WrapItem,
-  Icon,
-} from "@chakra-ui/react";
 import Layout from "../components/layout";
-import {
-  ProjectBoxHome,
-  Project,
-} from "../components/projectBox";
+import { ProjectBoxHome, Project } from "../components/projectBox";
 import Skill from "../components/skill";
 import { BioBox, BioItem } from "../components/bioBox";
 import { getProjectData } from "../lib/getProjectData";
@@ -22,105 +10,97 @@ import { getBioData } from "../lib/getBioData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AwardBox, AwardItem } from "../components/awardBox";
 import { getAwardData } from "../lib/getAwardData";
-
+import style from "./index.module.css";
+import "./index.module.css";
 export default function Home({
   project,
   contribution,
   bio,
-  awards
+  awards,
 }: {
   project: Project;
   contribution: Project;
   bio: BioItem[];
-  awards: AwardItem[]
+  awards: AwardItem[];
 }) {
   return (
     <Layout head>
-      <Stack
-        maxWidth={["100%", "4xl"]}
-        spacing="20"
-        alignItems="center"
-        textAlign="center"
-      >
-        <Stack spacing="5">
-          <Heading size="xl">Hi! I'm Antony 👋</Heading>
-          <Text fontSize="xl">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </Text>
-        </Stack>
+      <div className={style.component}>
+        <h2 className={style.subtitles}>Hi! I'm Antony 👋</h2>
+        <p className={style.introduction}>
+          I'm currently studying IT-Systems Engineering B.Sc. at the Hasso
+          Plattner Insitute, University Potsdam. I also work on various exciting
+          scientific software projects like symfit, sfepy, and GPflow. Producing
+          short films and advertisements and doing gymnastics with friends are
+          also some of my preferences.
+        </p>
+      </div>
+      
+      <div className={style.component}>
+        <h2 className={style.subtitles}>Skills</h2>
+        <div className={style.skillBars}>
+          <Skill skillName="Motivation" skillLevel={100} />
+          <Skill skillName="Learning speed" skillLevel={90} />
+          <Skill skillName="Technical Writing" skillLevel={60} />
+          <Skill skillName="Python" skillLevel={75} />
+          <Skill skillName="C++" skillLevel={80} />
+          <Skill skillName="WebDev" skillLevel={50} />
+        </div>
+      </div>
 
-        <Wrap spacing="10" justify="center">
-          <WrapItem verticalAlign="middle"></WrapItem>
-          <Stack textAlign="left" spacing="3" width="sm">
-            <Heading size="2xl" paddingBottom="3">
-              Skills
-            </Heading>
-            <Skill skillName="Python" skillLevel={80} />
-            <Skill skillName="Team" skillLevel={90} />
-            <Skill skillName="Fun" skillLevel={70} />
-          </Stack>
-          <WrapItem verticalAlign="middle">
-            <ProjectBoxHome {...project} />
-          </WrapItem>
-          <WrapItem verticalAlign="middle">
-            <ProjectBoxHome {...contribution} />
-          </WrapItem>
-          <WrapItem align="middle">
-            <Stack textAlign="left" spacing="3" width="sm">
-              <Skill skillName="Python" skillLevel={80} />
-              <Skill skillName="Python" skillLevel={80} />
-              <Skill skillName="Team" skillLevel={90} />
-              <Skill skillName="Fun" skillLevel={70} />
-            </Stack>
-          </WrapItem>
-          <WrapItem></WrapItem>
-        </Wrap>
+      <div className={style.component}>
+        <div className={style.projectAndContribution}>
+          <ProjectBoxHome {...contribution} />
+          <ProjectBoxHome {...project} />
+        </div>
+      </div>
+      <div className={style.component}>
+        <h2 className={style.subtitles}>Educaiton {" & "} Work</h2>
+        {bio.map((bioItem) => {
+          return (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <div style={{ marginRight: "2rem" }}>
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={["fas", "chevron-right"]}
+                  color="#153351"
+                />
+              </div>
+              <BioBox key={bioItem.startDate} {...bioItem} />
+            </div>
+          );
+        })}
+      </div>
 
-        <Stack spacing="10">
-          <Heading size="2xl">Resume</Heading>
-          <Stack spacing="5">
-            {bio.map((bioItem) => {
-              return (
-                <Flex align="center" direction="row">
-                  <Icon
-                    marginRight="10"
-                    size="2x"
-                    as={FontAwesomeIcon}
-                    icon={["fas", "chevron-right"]}
-                    color="brand.900"
-                  />
-                  <BioBox key={bioItem.startDate} {...bioItem} />
-                </Flex>
-              );
-            })}
-          </Stack>
-        </Stack>
-
-        <Stack spacing="10">
-          <Heading size="2xl">Awards</Heading>
-          <Stack spacing="5">
-            {awards.map((awardItem) => {
-              return (
-                <Flex align="center" direction="row">
-                  <Icon
-                    marginRight="10"
-                    size="2x"
-                    as={FontAwesomeIcon}
-                    icon={["fas", "chevron-right"]}
-                    color="brand.900"
-                  />
-                  <AwardBox key={awardItem.title} {...awardItem} />
-                </Flex>
-              );
-            })}
-          </Stack>
-        </Stack>
-
-      </Stack>
+      <div className={style.component}>
+        <h2 className={style.subtitles}>Awards</h2>
+        {awards.map((awardItem) => {
+          return (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <div style={{ marginRight: "2rem" }}>
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={["fas", "chevron-right"]}
+                  color="#153351"
+                />
+              </div>
+              <AwardBox key={awardItem.title} {...awardItem} />
+            </div>
+          );
+        })}
+      </div>
     </Layout>
   );
 }

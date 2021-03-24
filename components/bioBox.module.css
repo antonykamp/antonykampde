@@ -1,0 +1,22 @@
+.locationLink {
+    color: #273f5c;
+}
+
+.locationLink:hover {
+    color: black
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.headingDate {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.totalDescription {
+    font-size: 1.2rem;
+}

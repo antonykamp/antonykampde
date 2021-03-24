@@ -1,10 +1,36 @@
-.footerLink {
-    margin-top: 6;
-    margin-bottom: 6;
+.footerDiv {
+    width: 100%;
+    margin-top: 3rem;
+    align-items: center;
+    font-size: smaller;
+    background-color: #273f5c;
+    padding: 0.6rem;
+}
+
+.socialNetworks {
+    text-align: center;
+    color: #CBD5E0;
+    margin: 0.7rem;
+}
+
+.logoLink {
+    margin: 2em;
+}
+
+.logoLink:hover {
+    color: white;
+    text-shadow: 0.3px 0.3px white;
+    text-decoration: none;  
 }
 
 .footerLink:hover {
     color: white;
     text-shadow: 0.3px 0.3px white;
     text-decoration: none;  
+}
+
+.footerText {
+    text-align: center;
+    color: #CBD5E0;
+    margin: 0.7rem;
 }

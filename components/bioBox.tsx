@@ -1,6 +1,5 @@
-import { Stack, Text } from "@chakra-ui/layout";
 import Link from "next/link";
-
+import style from "./bioBox.module.css"
 export interface BioItem {
   startDate: string;
   endDate?: string;
@@ -17,21 +16,21 @@ export function BioBox({
   locationLink,
 }: BioItem) {
   return (
-    <Stack textAlign="left" spacing="0">
-      <Text fontWeight="bold" fontSize="2xl">
+    <div className={style.mainDiv}>
+      <h2 className={style.headingDate}>
         {startDate}
         {endDate && " - " + endDate}
-      </Text>
-      <Text fontSize="xl">
-        {jobDescription + " @"}
+      </h2>
+      <p className={style.totalDescription}>
+        {jobDescription}
         {locationLink ? (
           <Link href={locationLink}>
-            <a style={{ color: "#153351" }}>{location}</a>
+            <a className={style.locationLink}>{" @" + location}</a>
           </Link>
         ) : (
-          location
+          " @" + location
         )}
-      </Text>
-    </Stack>
+      </p>
+    </div>
   );
 }

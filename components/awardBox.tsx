@@ -1,6 +1,5 @@
-import { Stack, Text } from "@chakra-ui/layout";
 import Link from "next/link";
-
+import style from "./awardBox.module.css"
 export interface AwardItem {
   date: string;
   title: string;
@@ -10,8 +9,8 @@ export interface AwardItem {
 
 export function AwardBox({ date, title, location, locationLink }: AwardItem) {
   return (
-    <Stack textAlign="left" spacing="0">
-      <Text fontWeight="bold" fontSize="2xl">
+    <div className={style.mainDiv}>
+      <p className={style.awardLocation}>
         {locationLink ? (
           <Link href={locationLink}>
             <a>{location}</a>
@@ -19,11 +18,11 @@ export function AwardBox({ date, title, location, locationLink }: AwardItem) {
         ) : (
           location
         )}
-      </Text>
-      <Text fontSize="xl" color="brand.900">
+      </p>
+      <p className={style.awardTitle}>
         {title}
-      </Text>
-      <Text color="gray">{date}</Text>
-    </Stack>
+      </p>
+      <p className={style.awardDate}>{date}</p>
+    </div>
   );
 }

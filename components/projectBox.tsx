@@ -1,32 +1,26 @@
-import {
-  Heading,
-  Stack,
-  Text,
-  Badge,
-  LinkBox,
-  LinkOverlay,
-  Tag,
-  TagLeftIcon,
-  TagLabel,
-  useDisclosure,
-  Collapse,
-} from "@chakra-ui/react";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-common-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import style from "./projectBox.module.css";
+import Link from 'next/link'
+import {Badge, Tag, TagLabel, TagLeftIcon } from "@chakra-ui/react"
 
 export interface Project {
-  name: string,
-  introduction: string,
-  tags: ProjectTags[]
-  sections: ProjectSection[],
-  links: ProjectLink[],
-  isProject?: boolean
+  name: string;
+  introduction: string;
+  tags: ProjectTags[];
+  sections: ProjectSection[];
+  links: ProjectLink[];
+  isProject?: boolean;
 }
 
 export enum ProjectTags {
   python = "python",
   blitz = "blitz",
-  science = "cyan"
+  science = "cyan",
+  cpp = "pink",
+  nextjs = "black",
+  typescript = "blue",
 }
 
 interface ProjectSection {
@@ -37,7 +31,7 @@ interface ProjectSection {
 interface ProjectLink {
   name: string;
   link: string;
-  logo:[IconPrefix, IconName]
+  logo: [IconPrefix, IconName];
   color: string;
 }
 
@@ -46,48 +40,50 @@ interface ProjectHeadProps {
   tags: ProjectTags[];
   introduction: string;
 }
-export function ProjectHead({
-  name,
-  tags,
-  introduction,
-}: ProjectHeadProps) {
+export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
   const tagNameColor = {
     python: "blue",
     science: "science",
     blitz: "orange",
   };
   return (
-    <Stack paddingX="5">
-      <Heading size="lg">{name}</Heading>
-      <Stack direction="row">
+    <div>
+      <h2 className={style.projectName}>{name}</h2>
+      <div className={style.tagRow}>
         {tags.map((tag) => {
-          return <Badge colorScheme={tagNameColor[tag]}>{tag}</Badge>;
+          return (
+            <Badge className={style.tag} colorScheme={tagNameColor[tag]}>
+              {tag}
+            </Badge>
+          );
         })}
-      </Stack>
-      <Text>{introduction}</Text>
-    </Stack>
+      </div>
+      <p>{introduction}</p>
+    </div>
   );
 }
 
 interface ProjectTailProps {
   sections: ProjectSection[];
   links: ProjectLink[];
+  isOpen: boolean;
 }
-export function ProjectTail({ sections, links }: ProjectTailProps) {
+export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
   return (
-    <Stack paddingX="5">
+    <div className={style.boxTail}>
       {sections.map((section) => {
         return (
           <>
-            <Heading size="md">{section.title}</Heading>
-            <Text>{section.content}</Text>
+            <h3 className={style.sectionName}>{section.title}</h3>
+            <p>{section.content}</p>
           </>
         );
       })}
-      <Stack direction="row">
+      <div className={style.linkRow}>
         {links.map(({ name, link, logo, color }) => {
           return (
             <Tag
+              className={style.link}
               as="a"
               href={link}
               size="sm"
@@ -100,8 +96,8 @@ export function ProjectTail({ sections, links }: ProjectTailProps) {
             </Tag>
           );
         })}
-      </Stack>
-    </Stack>
+      </div>
+    </div>
   );
 }
 
@@ -112,66 +108,52 @@ export function ProjectBox({
   sections,
   links,
 }: Project) {
-  const { isOpen, onToggle } = useDisclosure()
+  const [isOpen, setisOpen] = useState(false);
   return (
-    <Stack
-      as="button"
-      onClick={onToggle}
-      textAlign="left"
-      width="sm"
-      spacing="5"
-      paddingY="5"
-      borderWidth="2px"
-      borderRadius="lg"
+    <button
+      className={style.projectBox}
+      onClick={() => {
+        setisOpen(!isOpen);
+      }}
     >
-      <ProjectHead
-        name={name}
-        tags={tags}
-        introduction={introduction}
-      />
-      <Collapse in={isOpen} animateOpacity>
-        <ProjectTail sections={sections} links={links} />
-      </Collapse>
-    </Stack>
+      <ProjectHead name={name} tags={tags} introduction={introduction} />
+      <div
+        style={{ maxHeight: isOpen ? "500px" : "0px" }}
+        className={style.toggleTail}
+      >
+        <ProjectTail sections={sections} links={links} isOpen={isOpen} />
+      </div>
+    </button>
   );
 }
 
-
 interface ProjectBoxHome {
-  name: string,
-  tags: ProjectTags[],
-  introduction: string,
-  isProject?: boolean
+  name: string;
+  tags: ProjectTags[];
+  introduction: string;
+  isProject?: boolean;
 }
 export function ProjectBoxHome({
   name,
   tags,
   introduction,
-  isProject = false
+  isProject = false,
 }: ProjectBoxHome) {
   return (
-    <Stack
-      textAlign="left"
-      width="sm"
-      paddingTop="5"
-      borderWidth="2px"
-      borderRadius="lg"
-    >
-      <ProjectHead
-        name={name}
-        tags={tags}
-        introduction={introduction}
-      />
-      <LinkBox
-        bgColor="gray.100"
-        padding="2"
-        _hover={{ bgColor: "gray.200" }}
-        textAlign="center"
-      >
-        <LinkOverlay href={"/" + (isProject ? "projects" : "contributions")}>
-          see more {isProject ? "projects" : "contributions"}
-        </LinkOverlay>
-      </LinkBox>
-    </Stack>
+    <div
+      className={style.boxHome}>
+      <div style={{padding: "1rem"}}>
+        <ProjectHead name={name} tags={tags} introduction={introduction} />
+      </div>
+      <Link href={"/" + (isProject ? "projects" : "contributions")}>
+        <a>
+        <div className={style.linkBox}>
+          <p>
+            see more {isProject ? "projects" : "contributions"}
+          </p>
+        </div>  
+        </a>
+      </Link>
+    </div>
   );
 }

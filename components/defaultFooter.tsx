@@ -1,4 +1,3 @@
-import { Text, Box } from "@chakra-ui/react";
 import Link from "next/link";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -13,28 +12,20 @@ const SocialNetworks = [
 ];
 export default function DefaultFooter() {
   return (
-    <Box
-      as="footer"
-      width="100%"
-      background="brand.900"
-      marginTop="4"
-      paddingY={["0", "3"]}
-      alignItems="center"
-      fontSize={["x-small", "sm"]}
-    >
+    <footer className={styles.footerDiv}>
       <style>{dom.css()}</style>
-      <Box textAlign="center" color="gray.300" m={["2", "3"]}>
+      <div className={styles.socialNetworks}>
         {SocialNetworks.map((item) => {
           return (
             <Link key={item.link} href={item.link}>
-              <a className={styles.footerLink}>
+              <a className={styles.logoLink}>
                 <FontAwesomeIcon size="2x" icon={item.logo} />
               </a>
             </Link>
           );
         })}
-      </Box>
-      <Text textAlign="center" m={["1", "2"]} textColor="gray.300">
+      </div>
+      <p className={styles.footerText}>
         {"© 2021 Antony Kamp. "}
         <Link href="impressum">
           <a className={styles.footerLink}>Impressum</a>
@@ -51,7 +42,7 @@ export default function DefaultFooter() {
         <Link href="https://vercel.com/">
           <a className={styles.footerLink}>vercel</a>
         </Link>
-      </Text>
-    </Box>
+      </p>
+    </footer>
   );
 }

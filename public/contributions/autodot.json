@@ -1,5 +1,5 @@
 {
-    "name": "sfepy",
+    "name": "AutoDot",
     "introduction": "Tuning Quantum devices with a flexible statistical approach.",
     "tags": ["python", "science"],
     "sections": [

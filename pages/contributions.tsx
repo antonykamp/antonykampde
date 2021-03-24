@@ -9,39 +9,33 @@ import {
 import path from "path";
 import { getAllProjectData } from "../lib/getProjectData";
 import { InferGetStaticPropsType } from "next";
+import style from "./contributions.module.css";
 
 export default function Contributions({
   contributionProjects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout>
-      <Stack
-        maxWidth={["100%", "4xl"]}
-        spacing="20"
-        alignItems="center"
-        textAlign="center"
-      >
-        <Stack spacing="5">
-          <Heading size="3xl">Contributions</Heading>
-          <Text fontSize="xl">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </Text>
-        </Stack>
-
-        <Wrap spacing="10" justify="center">
-          {contributionProjects.map((contribution) => {
-            return (
-              <WrapItem key={contribution.name}>
-                <ProjectBox {...contribution} />
-              </WrapItem>
-            );
-          })}
-        </Wrap>
-      </Stack>
+      <div className={style.component}>
+        <h1 className={style.title}>Contributions</h1>
+        <p className={style.description}>
+          Things I have contributed to.
+          <br />
+          Most of the projects are exciting scientific projects I've found
+          during private ones. As you can see, I'm often working on the
+          unittests and documentation of python module. <br />
+          Don't be shy and take a look. They don't bite 😉
+        </p>
+      </div>
+      <div className={style.projectList}>
+        {contributionProjects.map((contribution) => {
+          return (
+            <div key={contribution.name} className={style.projectItem}>
+              <ProjectBox {...contribution} />
+            </div>
+          );
+        })}
+      </div>
     </Layout>
   );
 }

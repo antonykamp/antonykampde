@@ -1,44 +1,29 @@
-import { Flex, Heading, Text, Box } from "@chakra-ui/react";
-import NextImage from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-import styles from "./defaultHeader.module.css";
+import style from "./defaultHeader.module.css";
 
 export default function DefaultHeader({ head = false }) {
   return (
     <>
-      <Flex
-        as="header"
-        margin="4"
-        align="center"
-        verticalAlign="bottom"
-        direction={["column", "row"]}
-      >
-        <NextImage
+      <header className={style.header}>
+        <Image
           src="/profile.jpg"
           alt="Antony Kamp"
-          priority={true}
-          loading="eager"
-          quality="100"
           width={head ? 192 : 128}
           height={head ? 192 : 128}
-          className={styles.roundedImage}
+          className={style.roundedImage}
         />
-        <Flex
-          padding={["1", "5"]}
-          direction="column"
-          textAlign={["center", "left"]}
-        >
-          <Heading
-            as="h1"
-            lineHeight="1"
-            fontSize={head ? ["6xl", "8xl"] : ["4xl", "5xl"]}
-            fontWeight={head ? "extrabold" : "bold"}
-            color="black"
-            paddingBottom={["1", "2"]}
+        <div className={style.titleMenu}>
+          <h1
+            className={style.title}
+            style={{
+              fontSize: head ? "6rem" : "4rem",
+              lineHeight: head? "6rem": "4rem"
+            }}
           >
             Antony Kamp
-          </Heading>
-          <Text fontSize={"2xl"}>
+          </h1>
+          <p className={style.menu}>
             <Link href="/">
               <a>about</a>
             </Link>
@@ -50,9 +35,9 @@ export default function DefaultHeader({ head = false }) {
             <Link href="/contributions">
               <a>contributions</a>
             </Link>
-          </Text>
-        </Flex>
-      </Flex>
+          </p>
+        </div>
+      </header>
     </>
   );
 }

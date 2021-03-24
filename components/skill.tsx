@@ -1,17 +1,17 @@
-import { Heading, Stack, Text, Box, Flex, Divider, Link, LinkBox, LinkOverlay, Progress, Spacer } from "@chakra-ui/react";
+import style from "./skill.module.css"
 
 interface SkillProps {
     skillName: string,
     skillLevel: number
 }
 export default function Skill({ skillName, skillLevel }: SkillProps){
+    const levelWidth = skillLevel*18/100
     return (
-        <Flex direction="row" alignItems="center">
-            <Text as="i" fontSize="lg">{skillName}</Text>
-            <Spacer/>
-            <Box borderWidth="1.5px" bgColor="gray.50" borderRadius="lg" height="3" width="18em" verticalAlign="center">
-                <Box borderWidth="1.5px" bgColor="brand.900" borderRadius="lg" width={((skillLevel*18)/100) + "em"} height="3"/>
-            </Box>
-        </Flex>
+        <div className={style.mainDiv}>
+            <i className={style.skillName}>{skillName}</i>
+            <div className={style.outerBox}>
+                <div className={style.innerBox} style={{width: `${levelWidth}rem`}}/>
+            </div>
+        </div>
     )
 }
