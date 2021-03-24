@@ -1,0 +1,25 @@
+{
+    "name": "activity",
+    "introduction": "Communicate with your friends in broadcasts easily.",
+    "tags": ["blitz", "typescript"],
+    "sections": [
+      {
+        "title": "Goal of the project",
+        "content": "With activity, you can text many friends simultaneously and parallel to communicate that e.g., you will go bouldering in 30min."
+      },
+      {
+        "title": "Future",
+        "content": "In the future, we want to polish the layout and add more features, for example, removing friends."
+      }
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "color": "gray",
+        "link": "github.com/antonykamp/activity",
+        "logo": ["fab", "github"]
+      }
+    ],
+    "isProject": true
+  }
+  

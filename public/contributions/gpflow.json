@@ -1,0 +1,30 @@
+{
+    "name": "GPflow",
+    "introduction": "Gaussian processes in TensorFlow.",
+    "tags": ["python", "science"],
+    "sections": [
+      {
+        "title": "Goal",
+        "content": "GPflow is a package for building Gaussian process models in Python. It implements modern Gaussian process inference for composable kernels and likelihoods."
+      },
+      {
+        "title": "My work",
+        "content": "I'm mostly working on the optimizer wrapper."
+      }
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "color": "gray",
+        "link": "https://github.com/GPflow/GPflow",
+        "logo": ["fab", "github"]
+      },
+      {
+        "name": "Documentation",
+        "color": "cyan",
+        "link": "https://gpflow.readthedocs.io",
+        "logo": ["fas", "book-open"]
+      }
+    ]
+  }
+  

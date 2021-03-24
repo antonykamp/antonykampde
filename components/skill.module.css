@@ -1,0 +1,25 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.skillName {
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.outerBox {
+    border-width: 1.5px;
+    border-radius: 20px;
+    width: 18rem;
+    height: .8rem;
+    justify-content: center;
+}
+
+.innerBox {
+    background-color: #153351;
+    border-radius: 5px;
+    height: 0.6rem;
+}

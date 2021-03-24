@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [antonykamp.de](antonykamp.de)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=antonykampde)
+[![Website antonykamp.de](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](antonykamp.de)
+[![Build Status](https://travis-ci.com/antonykamp/antonykampde.svg?token=KLyVgPMWyiqQ3RqyF6uP&branch=master)](https://travis-ci.com/antonykamp/antonykampde)
+
+This is the repository of my personal website [antonykamp.de](https://antonykamp.de). It's a [Next.js](https://nextjs.org) project written in TypeScript that uses the component library [chakra-iu](https://chakra-ui.com/) and icon from [FontAwesome](https://fontawesome.com/).
 
 ## Getting Started
 
-First, run the development server:
+If you want to try the website out, clone this repository first, install all dependencies and run the server.
 
 ```bash
+git clone https://github.com/antonykamp/antonykampde.git
+cd antonykampde
+npm i
 npm run dev
 # or
-yarn dev
+npm build
+npm run start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## How to expand the dataset
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Four datasets exist that you can edit and expand for your website (_Where_).If you want to add data-entries, I recommend to use the given interfaces(_How_).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+| What?                 | Where                                                                                             | How                                                                                                   |
+|-----------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| A new project         | [`public/projects/`](https://github.com/antonykamp/antonykampde/blob/master/public/projects/)     | [`Project`](https://github.com/antonykamp/antonykampde/blob/master/components/projectBox.tsx#L17-L24) |
+| A new contribution    | [`public/contributions/`](https://github.com/antonykamp/antonykampde/blob/master/)         | [`Project`](https://github.com/antonykamp/antonykampde/blob/master/components/projectBox.tsx#L17-L24) |
+| An entry to my resume | [`public/bio.js`](https://github.com/antonykamp/antonykampde/blob/master/public/bio.json)         | [`BioItem`](https://github.com/antonykamp/antonykampde/blob/master/components/bioBox.tsx#L3-L9)       |
+| An entry to my awards | [`public/awards.json`](https://github.com/antonykamp/antonykampde/blob/master/public/awards.json) | [`AwardItem`](https://github.com/antonykamp/antonykampde/blob/master/components/awardBox.tsx#L3.L8)   |
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy the edited website is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> It's no rocketscience ;)
