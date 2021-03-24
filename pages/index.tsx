@@ -35,7 +35,7 @@ export default function Home({
           also some of my preferences.
         </p>
       </div>
-      
+
       <div className={style.component}>
         <h2 className={style.subtitles}>Skills</h2>
         <div className={style.skillBars}>
@@ -55,7 +55,7 @@ export default function Home({
         </div>
       </div>
       <div className={style.component}>
-        <h2 className={style.subtitles}>Educaiton {" & "} Work</h2>
+        <h2 className={style.subtitles}>Education {" & "} Work</h2>
         {bio.map((bioItem) => {
           return (
             <div
@@ -65,7 +65,7 @@ export default function Home({
                 paddingTop: "1rem",
               }}
             >
-              <div style={{ marginRight: "2rem" }}>
+              <div className={style.itemIcon}>
                 <FontAwesomeIcon
                   size="2x"
                   icon={["fas", "chevron-right"]}
@@ -89,7 +89,7 @@ export default function Home({
                 paddingTop: "1rem",
               }}
             >
-              <div style={{ marginRight: "2rem" }}>
+              <div className={style.itemIcon}>
                 <FontAwesomeIcon
                   size="2x"
                   icon={["fas", "chevron-right"]}
