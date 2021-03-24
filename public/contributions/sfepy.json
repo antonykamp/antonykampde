@@ -1,0 +1,30 @@
+{
+    "name": "sfepy",
+    "introduction": "A python module to evaluate the finite element method.",
+    "tags": ["python", "science"],
+    "sections": [
+      {
+        "title": "Goal",
+        "content": "Solving systems of coupled partial differential equations by the finite element method in 1D, 2D and 3D."
+      },
+      {
+        "title": "My work",
+        "content": "I'm mostly working on documnetation."
+      }
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "color": "gray",
+        "link": "github.com/sfepy/sfepy",
+        "logo": ["fab", "github"]
+      },
+      {
+        "name": "Documentation",
+        "color": "cyan",
+        "link": "https://sfepy.org",
+        "logo": ["fas", "book-open"]
+      }
+    ]
+  }
+  

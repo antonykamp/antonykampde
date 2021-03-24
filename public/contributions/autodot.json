@@ -1,0 +1,24 @@
+{
+    "name": "sfepy",
+    "introduction": "Tuning Quantum devices with a flexible statistical approach.",
+    "tags": ["python", "science"],
+    "sections": [
+      {
+        "title": "Goal",
+        "content": "Quantum devices used to implement spin qubits in semiconductors are challenging to tune and characterize. AutoDot is a statistical approach to tuning such devices flexibly."
+      },
+      {
+        "title": "My work",
+        "content": "I'm working on a new unitvector sampler using the Covariance Matrix Adaptation Evolution Strategy."
+      }
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "color": "gray",
+        "link": "https://github.com/oxquantum-repo/AutoDot",
+        "logo": ["fab", "github"]
+      }
+    ]
+  }
+  

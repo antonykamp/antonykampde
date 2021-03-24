@@ -1,11 +1,15 @@
 {
     "name": "activity",
-    "introduction": "is a great project",
-    "tags": ["blitz"],
+    "introduction": "Communicate with your friends in broadcasts easily.",
+    "tags": ["blitz", "typescript"],
     "sections": [
       {
-        "title": "Goal",
-        "content": "we have many goals"
+        "title": "Goal of the project",
+        "content": "With activity, you can text many friends simultaneously and parallel to communicate that e.g., you will go bouldering in 30min."
+      },
+      {
+        "title": "Future",
+        "content": "In the future, we want to polish the layout and add more features, for example, removing friends."
       }
     ],
     "links": [

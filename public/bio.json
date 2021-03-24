@@ -3,13 +3,20 @@
     "startDate": "October 2020",
     "jobDescription": "Studying IT-Systems Engineering B.Sc.",
     "location": "HPI Potsdam",
-    "locationLink": "hpide/"
+    "locationLink": "https://hpi.de/"
+  },
+  {
+    "startDate": "October 2018",
+    "endDate":"June 2020",
+    "jobDescription": "Videoproducer",
+    "location": "Schiller Eventpersonal GmbH, Berlin",
+    "locationLink": "https://schiller-eventpersonal.de/"
   },
   {
     "startDate": "August 2012",
     "endDate": "June 2020",
     "jobDescription": "Student",
     "location": "Carl Zeiss Gymnasium",
-    "locationLink": "cz-gymnasium.jena.de/"
+    "locationLink": "https://cz-gymnasium.jena.de/"
   }
 ]

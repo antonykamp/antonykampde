@@ -1,11 +1,15 @@
 {
   "name": "symfit",
-  "introduction": "is a great project",
+  "introduction": "Symbolic Fitting; fitting as it should be. ",
   "tags": ["python", "science"],
   "sections": [
     {
       "title": "Goal",
-      "content": "we have many goals"
+      "content": "The goal of this project is simple: to make fitting in Python pythonic."
+    },
+    {
+      "title": "My work",
+      "content": "I'm mostly working on documnetation and the unittests. Whenever I find a small bug during testing, I fix it of course."
     }
   ],
   "links": [
@@ -14,6 +18,12 @@
       "color": "gray",
       "link": "github.com/tbuLi/symfit",
       "logo": ["fab", "github"]
+    },
+    {
+      "name": "Documentation",
+      "color": "cyan",
+      "link": "https://symfit.readthedocs.org",
+      "logo": ["fas", "book-open"]
     }
   ]
 }

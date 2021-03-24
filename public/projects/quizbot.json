@@ -1,0 +1,37 @@
+{
+    "name": "QuizBot",
+    "introduction": "A Telegrambot to create and attempt to quizzes easily.",
+    "tags": ["python"],
+    "sections": [
+      {
+        "title": "What is QuizBot?",
+        "content": "QuizBot is a Telegram bot with which you can create and attempt quizzes. A quiz is a collection of possibly random questions."
+      },
+      {
+        "title": "Deployment",
+        "content": "You can try QuizBot on your own! It's deployed on Heroku with a MongoDB database saving your and your friends' quizzes."
+      }
+    ],
+    "links": [
+      {
+        "name": "Telegram",
+        "color": "blue",
+        "link": "http://t.me/antonysquizbot",
+        "logo": ["fab", "telegram-plane"]
+      },
+      {
+        "name": "GitHub",
+        "color": "gray",
+        "link": "github.com/antonykamp/quizbot",
+        "logo": ["fab", "github"]
+      },
+      {
+        "name": "Documentation",
+        "color": "cyan",
+        "link": "https://quizbot.readthedocs.io",
+        "logo": ["fas", "book-open"]
+      }
+    ],
+    "isProject": true
+  }
+  
