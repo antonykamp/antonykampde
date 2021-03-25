@@ -1,0 +1,15 @@
+.badgeObject {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    border-radius: 0.125rem;
+    margin-right: 5px;
+    border-width: 0.1p;
+}
+
+.badgeTitle {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}

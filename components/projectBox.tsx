@@ -1,26 +1,16 @@
-import { IconName, IconPrefix } from "@fortawesome/fontawesome-common-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import style from "./projectBox.module.css";
 import Link from 'next/link'
-import {Badge, Tag, TagLabel, TagLeftIcon } from "@chakra-ui/react"
+import { ProjectBadges, ProjectBadge } from "./ProjectBadge"
+import { ProjectLink, ProjectLinks } from "./projectLink";
 
 export interface Project {
   name: string;
   introduction: string;
-  tags: ProjectTags[];
+  tags: ProjectBadges[];
   sections: ProjectSection[];
-  links: ProjectLink[];
+  links: LinkName[];
   isProject?: boolean;
-}
-
-export enum ProjectTags {
-  python = "python",
-  blitz = "blitz",
-  science = "cyan",
-  cpp = "pink",
-  nextjs = "black",
-  typescript = "blue",
 }
 
 interface ProjectSection {
@@ -28,33 +18,24 @@ interface ProjectSection {
   content: string;
 }
 
-interface ProjectLink {
-  name: string;
+interface LinkName {
+  name: ProjectLinks;
   link: string;
-  logo: [IconPrefix, IconName];
-  color: string;
 }
 
 interface ProjectHeadProps {
   name: string;
-  tags: ProjectTags[];
+  tags: ProjectBadges[];
   introduction: string;
 }
 export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
-  const tagNameColor = {
-    python: "blue",
-    science: "science",
-    blitz: "orange",
-  };
   return (
     <div>
       <h2 className={style.projectName}>{name}</h2>
       <div className={style.tagRow}>
         {tags.map((tag) => {
           return (
-            <Badge className={style.tag} colorScheme={tagNameColor[tag]}>
-              {tag}
-            </Badge>
+            <ProjectBadge badge={tag}/>
           );
         })}
       </div>
@@ -65,7 +46,7 @@ export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
 
 interface ProjectTailProps {
   sections: ProjectSection[];
-  links: ProjectLink[];
+  links: LinkName[];  
   isOpen: boolean;
 }
 export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
@@ -73,28 +54,15 @@ export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
     <div className={style.boxTail}>
       {sections.map((section) => {
         return (
-          <>
+          <div className={style.sectionObject}>
             <h3 className={style.sectionName}>{section.title}</h3>
             <p>{section.content}</p>
-          </>
+          </div>
         );
       })}
       <div className={style.linkRow}>
-        {links.map(({ name, link, logo, color }) => {
-          return (
-            <Tag
-              className={style.link}
-              as="a"
-              href={link}
-              size="sm"
-              key={link}
-              variant="solid"
-              colorScheme={color}
-            >
-              <TagLeftIcon boxSize="12px" as={FontAwesomeIcon} icon={logo} />
-              <TagLabel>{name}</TagLabel>
-            </Tag>
-          );
+        {links.map(({ name, link }) => {
+          return (<ProjectLink name={name} link={link} />)
         })}
       </div>
     </div>
@@ -129,7 +97,7 @@ export function ProjectBox({
 
 interface ProjectBoxHome {
   name: string;
-  tags: ProjectTags[];
+  tags: ProjectBadges[];
   introduction: string;
   isProject?: boolean;
 }
