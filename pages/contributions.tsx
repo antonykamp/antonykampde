@@ -1,11 +1,5 @@
-import { Wrap, Box, Heading, Stack, Text, WrapItem } from "@chakra-ui/react";
 import Layout from "../components/layout";
-import {
-  ProjectBoxHome,
-  ProjectTags,
-  Project,
-  ProjectBox,
-} from "../components/projectBox";
+import { ProjectBox } from "../components/projectBox";
 import path from "path";
 import { getAllProjectData } from "../lib/getProjectData";
 import { InferGetStaticPropsType } from "next";

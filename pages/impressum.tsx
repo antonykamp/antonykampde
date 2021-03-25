@@ -1,39 +1,38 @@
-import { Heading, Text, Stack } from "@chakra-ui/layout";
 import Link from "next/link";
 import Layout from "../components/layout";
-
+import style from "./impressum.module.css"
 export default function Impressum() {
   return (
     <Layout>
-      <Stack spacing="10">
-        <Heading textAlign="center">Impressum</Heading>
-        <Stack spacing="0">
-          <Heading marginBottom="4" fontSize="xl" id="m46">
+      <h1 className={style.title}>Impressum</h1>
+      <div className={style.container}>
+      <div  className={style.section}>
+          <h2 className={style.subtitle}>
             Diensteanbieter
-          </Heading>
-          <Text>Antony Kamp</Text>
-          <Text>Stahnsdorferstraße 142B</Text>
-          <Text>14482 Potsdam</Text>
-          <Text>Germany</Text>
-        </Stack>
-        <Stack spacing="0">
-          <Heading marginBottom="4" fontSize="xl" id="m56">
+          </h2>
+          <p>Antony Kamp</p>
+          <p>Stahnsdorferstraße 142B</p>
+          <p>14482 Potsdam</p>
+          <p>Germany</p>
+          </div>
+        <div  className={style.section}>
+          <h2 className={style.subtitle}>
             Kontaktmöglichkeiten
-          </Heading>
-          <Text>
+          </h2>
+          <p>
             E-Mail-Adresse:{" "}
             <Link href="mailto:info@antonykamp.de">
               <a>info@antonykamp.de</a>
             </Link>
-          </Text>
-        </Stack>
+          </p>
         <Link href="https://datenschutz-generator.de/?l=de">
           <a>
             Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
             Schwenke
           </a>
         </Link>
-      </Stack>
+      </div>
+      </div>
     </Layout>
   );
 }

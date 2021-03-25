@@ -1,6 +1,6 @@
 {
   "name": "symfit",
-  "introduction": "Symbolic Fitting; fitting as it should be. ",
+  "introduction": "Symbolic Fitting; fitting as it should be.",
   "tags": ["python", "science"],
   "sections": [
     {
@@ -9,14 +9,14 @@
     },
     {
       "title": "My work",
-      "content": "I'm mostly working on documnetation and the unittests. Whenever I find a small bug during testing, I fix it of course."
+      "content": "I'm mostly working on documentation and the unit tests. Whenever I find a bug during testing, I fix it, of course."
     }
   ],
   "links": [
     {
       "name": "GitHub",
       "color": "gray",
-      "link": "github.com/tbuLi/symfit",
+      "link": "https://github.com/tbuLi/symfit",
       "logo": ["fab", "github"]
     },
     {

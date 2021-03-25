@@ -40,7 +40,7 @@ export default function Home({
         <h2 className={style.subtitles}>Skills</h2>
         <div className={style.skillBars}>
           <Skill skillName="Motivation" skillLevel={100} />
-          <Skill skillName="Learning speed" skillLevel={90} />
+          <Skill skillName="Learning Speed" skillLevel={90} />
           <Skill skillName="Technical Writing" skillLevel={60} />
           <Skill skillName="Python" skillLevel={75} />
           <Skill skillName="C++" skillLevel={80} />

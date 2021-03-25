@@ -9,27 +9,21 @@
       },
       {
         "title": "Deployment",
-        "content": "You can try QuizBot on your own! It's deployed on Heroku with a MongoDB database saving your and your friends' quizzes."
+        "content": "You can try QuizBot on your own! It's currently deployed on Heroku with a MongoDB database saving your and your friends' quizzes."
       }
     ],
     "links": [
       {
         "name": "Telegram",
-        "color": "blue",
-        "link": "http://t.me/antonysquizbot",
-        "logo": ["fab", "telegram-plane"]
+        "link": "http://t.me/antonysquizbot"
       },
       {
         "name": "GitHub",
-        "color": "gray",
-        "link": "github.com/antonykamp/quizbot",
-        "logo": ["fab", "github"]
+        "link": "https://github.com/antonykamp/quizbot"
       },
       {
         "name": "Documentation",
-        "color": "cyan",
-        "link": "https://quizbot.readthedocs.io",
-        "logo": ["fas", "book-open"]
+        "link": "https://quizbot.readthedocs.io"
       }
     ],
     "isProject": true

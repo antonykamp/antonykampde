@@ -5,15 +5,13 @@
     "sections": [
       {
         "title": "What you can do",
-        "content": "You can create your own TicTacToe-Robot and fight against mine or yourself."
+        "content": "You can create your TicTacToe-Robot and fight against mine or yourself."
       }
     ],
     "links": [
       {
         "name": "GitHub",
-        "color": "gray",
-        "link": "https://github.com/antonykamp/TicTacToe-Robots",
-        "logo": ["fab", "github"]
+        "link": "https://github.com/antonykamp/TicTacToe-Robots"
       }
     ],
     "isProject": true

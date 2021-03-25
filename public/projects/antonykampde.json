@@ -1,25 +1,21 @@
 {
     "name": "antonykamp.de",
-    "introduction": "My personal website you're looking at.",
+    "introduction": "My website you're looking at.",
     "tags": ["nextjs", "typescript"],
     "sections": [
       {
         "title": "Future",
-        "content": "I want polish this website that you can use it as an nextjs-template in the future. This includes adding unittests and elements of the GitHub GraphQL API to the contributions page."
+        "content": "I want to polish this website that you can use it as a nextjs-template in the future. This includes adding unit tests and elements of the GitHub GraphQL API to the contributions page."
       }
     ],
     "links": [
       {
         "name": "GitHub",
-        "color": "gray",
-        "link": "github.com/antonykamp/antonykampde",
-        "logo": ["fab", "github"]
+        "link": "github.com/antonykamp/antonykampde"
       },
       {
         "name": "antonykamp.de",
-        "color": "cyan",
-        "link": "https://quizbot.readthedocs.io",
-        "logo": ["fas", "archive"]
+        "link": "https://quizbot.readthedocs.io"
       }
     ],
     "isProject": true
