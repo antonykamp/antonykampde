@@ -29,6 +29,7 @@ export default function Datenschutz() {
     <>
       <Head>
         <title>Antony Kamp | Datenschutz</title>
+        <meta name="robots" content="noindex"/>
       </Head>
       <Layout>
         <div className={utilStyle.container}>

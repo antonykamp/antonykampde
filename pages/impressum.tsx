@@ -8,6 +8,7 @@ export default function Impressum() {
     <>
       <Head>
         <title>Antony Kamp | Impressum</title>
+        <meta name="robots" content="noindex"/>
       </Head>
       <Layout>
         <h1 className={utilStyle.heading}>Impressum</h1>
