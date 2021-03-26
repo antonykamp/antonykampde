@@ -6,14 +6,14 @@
 }
 
 .skillName {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 3px;
 }
 
 .outerBox {
     border-width: 1.5px;
     border-radius: 20px;
-    width: 18rem;
+    width: 21rem;
     height: .8rem;
     justify-content: center;
 }

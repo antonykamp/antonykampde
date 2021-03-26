@@ -1,17 +1,17 @@
-.title {
+.heading {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-.subtitle {
-    margin-top: 0.4rem;
+.subHeading {
+    margin-bottom: 0.3rem;
     font-size: 2rem;
     font-weight: 600;
 }
+
 .container {
+    margin-top: 0.8rem;
     text-align: left;
-}
-.section {
-    margin: 1rem;
 }

@@ -3,7 +3,8 @@ import { ProjectBox } from "../components/projectBox";
 import path from "path";
 import { getAllProjectData } from "../lib/getProjectData";
 import { InferGetStaticPropsType } from "next";
-import style from "./contributions.module.css";
+import listUtilStyle from "../styles/projectListUtils.module.css";
+import utilStyle from "../styles/utils.module.css"
 import Head from "next/head";
 
 export default function Contributions({
@@ -16,9 +17,9 @@ export default function Contributions({
       <meta name="description" content="Things I have contributed to."/>
     </Head>
     <Layout>
-      <div className={style.component}>
-        <h1 className={style.title}>Contributions</h1>
-        <p className={style.description}>
+      <div className={utilStyle.container}>
+        <h1 className={utilStyle.heading}>Contributions</h1>
+        <p className={utilStyle.pageDescription}>
           Things I have contributed to.
           <br />
           Most of the projects are exciting scientific projects I've found
@@ -27,14 +28,16 @@ export default function Contributions({
           Don't be shy and take a look. They don't bite 😉
         </p>
       </div>
-      <div className={style.projectList}>
+      <div className={utilStyle.container}>
+      <div className={listUtilStyle.projectList}>
         {contributionProjects.map((contribution) => {
           return (
-            <div key={contribution.name} className={style.projectItem}>
+            <div key={contribution.name} className={listUtilStyle.projectItem}>
               <ProjectBox {...contribution} />
             </div>
           );
         })}
+      </div>
       </div>
     </Layout>
     </>

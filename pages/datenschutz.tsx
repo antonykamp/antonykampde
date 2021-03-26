@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./datenschutz.module.css";
+import utilStyle from "../styles/legalUtils.module.css";
 import Head from "next/head";
 
 export default function Datenschutz() {
@@ -30,10 +31,10 @@ export default function Datenschutz() {
         <title>Antony Kamp | Datenschutz</title>
       </Head>
       <Layout>
-        <div className={style.container}>
-          <h1 className={style.title}>Datenschutzerklärung</h1>
-          <div className={style.section}>
-            <h2 className={style.subtitle}>Einleitung</h2>
+        <div className={utilStyle.container}>
+          <h1 className={utilStyle.heading}>Datenschutzerklärung</h1>
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading}>Einleitung</h2>
             <p>
               Mit der folgenden Datenschutzerklärung möchten wir Sie darüber
               aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend
@@ -44,8 +45,8 @@ export default function Datenschutz() {
             <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
             <p>Stand: 23. März 2021</p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle}>Inhaltsübersicht</h2>{" "}
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading}>Inhaltsübersicht</h2>{" "}
             {tableOfContents.map(({ name, ref }) => {
               return (
                 <div className={style.listRow}>
@@ -62,8 +63,8 @@ export default function Datenschutz() {
               );
             })}
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m3">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m3">
               Verantwortlicher
             </h2>
             <p>Antony Kamp</p>
@@ -78,8 +79,8 @@ export default function Datenschutz() {
               .
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="mOverview">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="mOverview">
               Übersicht der Verarbeitungen
             </h2>
             <p>
@@ -88,8 +89,10 @@ export default function Datenschutz() {
               betroffenen Personen.
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle}>Arten der verarbeiteten Daten</h2>
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading}>
+              Arten der verarbeiteten Daten
+            </h2>
 
             <div className={style.listRow}>
               <div className={style.listIcon}>
@@ -159,8 +162,10 @@ export default function Datenschutz() {
               Zahlungshistorie).
             </div>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle}>Kategorien betroffener Personen</h2>
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading}>
+              Kategorien betroffener Personen
+            </h2>
 
             <div className={style.listRow}>
               <div className={style.listIcon}>
@@ -190,8 +195,8 @@ export default function Datenschutz() {
               Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).
             </div>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle}>Zwecke der Verarbeitung</h2>
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading}>Zwecke der Verarbeitung</h2>
 
             <div className={style.listRow}>
               <div className={style.listIcon}>
@@ -239,8 +244,8 @@ export default function Datenschutz() {
               Verwaltung und Beantwortung von Anfragen.
             </div>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m13">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m13">
               Maßgebliche Rechtsgrundlagen
             </h2>
             <p>
@@ -339,8 +344,8 @@ export default function Datenschutz() {
               einzelnen Bundesländer zur Anwendung gelangen.
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m27">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m27">
               Sicherheitsmaßnahmen
             </h2>
             <p>
@@ -369,8 +374,8 @@ export default function Datenschutz() {
               Voreinstellungen.
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m25">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m25">
               Übermittlung von personenbezogenen Daten
             </h2>
             <p>
@@ -386,8 +391,8 @@ export default function Datenschutz() {
               mit den Empfängern Ihrer Daten ab.
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m24">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m24">
               Datenverarbeitung in Drittländern
             </h2>
             <p>
@@ -415,8 +420,8 @@ export default function Datenschutz() {
               ).
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m134">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m134">
               Einsatz von Cookies
             </h2>
             <p>
@@ -655,8 +660,8 @@ export default function Datenschutz() {
               </p>
             </div>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m317">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m317">
               Geschäftliche Leistungen
             </h2>
             <p>
@@ -761,8 +766,8 @@ export default function Datenschutz() {
               </p>
             </div>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m225">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m225">
               Bereitstellung des Onlineangebotes und Webhosting
             </h2>
             <p>
@@ -855,8 +860,8 @@ export default function Datenschutz() {
               </p>
             </div>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m12">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m12">
               Löschung von Daten
             </h2>
             <p>
@@ -884,8 +889,8 @@ export default function Datenschutz() {
               jeweiligen Verarbeitungen vorrangig gelten.
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m15">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m15">
               Änderung und Aktualisierung der Datenschutzerklärung
             </h2>
             <p>
@@ -905,8 +910,8 @@ export default function Datenschutz() {
               prüfen.
             </p>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m10">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m10">
               Rechte der betroffenen Personen
             </h2>
             <p>
@@ -1030,8 +1035,8 @@ export default function Datenschutz() {
               </p>
             </div>
           </div>
-          <div className={style.section}>
-            <h2 className={style.subtitle} id="m42">
+          <div className={utilStyle.container}>
+            <h2 className={utilStyle.subHeading} id="m42">
               Begriffsdefinitionen
             </h2>
             <p>
@@ -1097,7 +1102,7 @@ export default function Datenschutz() {
               </p>
             </div>
           </div>
-          <div className={style.section}>
+          <div className={utilStyle.container}>
             <p>
               <Link href="https://datenschutz-generator.de/?l=de">
                 <a target="_blank">

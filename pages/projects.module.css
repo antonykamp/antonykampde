@@ -1,19 +1,4 @@
-.title {
-    font-size: 3rem;
-    font-weight: 700;
-    padding-bottom: 0.7rem;
-}
-
-.component {
-    margin: 1rem;
-}
-
-.description {
-    font-size: 1.4rem;
-}
-
 .projectList {
-    margin: 4rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

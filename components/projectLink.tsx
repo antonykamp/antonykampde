@@ -42,7 +42,7 @@ export function ProjectLink({
 
   return (
     <Link href={link}>
-      <a>
+      <a target="_blank">
         <div className={style.linkObject} style={{ backgroundColor: color }}>
           <FontAwesomeIcon icon={icon} />
           <p className={style.linkName}>{name}</p>

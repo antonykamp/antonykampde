@@ -5,7 +5,7 @@ interface SkillProps {
     skillLevel: number
 }
 export default function Skill({ skillName, skillLevel }: SkillProps){
-    const levelWidth = skillLevel*18/100
+    const levelWidth = skillLevel*21/100
     return (
         <div className={style.mainDiv}>
             <i className={style.skillName}>{skillName}</i>
