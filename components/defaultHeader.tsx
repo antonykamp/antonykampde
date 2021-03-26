@@ -17,8 +17,9 @@ export default function DefaultHeader({ head = false }) {
           <h1
             className={style.title}
             style={{
-              fontSize: head ? "6rem" : "4rem",
-              lineHeight: head? "6rem": "4rem"
+              fontSize: head ? "6rem" : "3rem",
+              lineHeight: head? "6rem": "3rem",
+              paddingBottom: head? "1rem": "0.5rem"
             }}
           >
             Antony Kamp

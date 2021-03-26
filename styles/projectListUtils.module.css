@@ -1,11 +1,15 @@
-.projectList {
+.projectTable {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.projectColumn {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 .projectItem {
-    margin: 1rem;
+    margin-bottom: 1rem;
 }

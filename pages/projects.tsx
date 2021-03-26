@@ -12,6 +12,14 @@ export default function Projects({
 }: {
   projectProjects: Project[];
 }) {
+  const COLUMN_NUM = 2
+  let columns: Project[][] = []
+
+  for (let col = 0; col < COLUMN_NUM; col++){
+    columns.push(projectProjects.filter(project => {
+      return projectProjects.indexOf(project) % COLUMN_NUM == col
+    }))
+  }
   return (
     <>
       <Head>
@@ -33,16 +41,26 @@ export default function Projects({
           </p>
         </div>
         <div className={utilStyle.container}>
-          <div className={listUtilStyle.projectList}>
-            {projectProjects.map((contribution) => {
-              return (
-                <div key={contribution.name} className={listUtilStyle.projectItem}>
-                  <ProjectBox {...contribution} />
-                </div>
-              );
-            })}
-          </div>
+        <div className={listUtilStyle.projectTable}>
+            {
+              columns.map(column => {
+                return (
+                  <div className={listUtilStyle.projectColumn}>
+                    {
+                      column.map(contribution => {
+                        return (
+                          <div key={contribution.name} className={listUtilStyle.projectItem}>
+                          <ProjectBox {...contribution} />
+                        </div>
+                        )
+                      })
+                    }
+                  </div>
+                )
+              })
+            }
         </div>
+      </div>
       </Layout>
     </>
   );

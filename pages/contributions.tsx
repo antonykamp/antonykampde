@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import { ProjectBox } from "../components/projectBox";
+import { Project, ProjectBox } from "../components/projectBox";
 import path from "path";
 import { getAllProjectData } from "../lib/getProjectData";
 import { InferGetStaticPropsType } from "next";
@@ -10,6 +10,15 @@ import Head from "next/head";
 export default function Contributions({
   contributionProjects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const COLUMN_NUM = 2
+  let columns: Project[][] = []
+
+  for (let col = 0; col < COLUMN_NUM; col++){
+    columns.push(contributionProjects.filter(project => {
+      return contributionProjects.indexOf(project) % COLUMN_NUM == col
+    }))
+  }
+
   return (
     <>
     <Head>
@@ -29,15 +38,25 @@ export default function Contributions({
         </p>
       </div>
       <div className={utilStyle.container}>
-      <div className={listUtilStyle.projectList}>
-        {contributionProjects.map((contribution) => {
-          return (
-            <div key={contribution.name} className={listUtilStyle.projectItem}>
-              <ProjectBox {...contribution} />
-            </div>
-          );
-        })}
-      </div>
+        <div className={listUtilStyle.projectTable}>
+            {
+              columns.map(column => {
+                return (
+                  <div className={listUtilStyle.projectColumn}>
+                    {
+                      column.map(contribution => {
+                        return (
+                          <div key={contribution.name} className={listUtilStyle.projectItem}>
+                          <ProjectBox {...contribution} />
+                        </div>
+                        )
+                      })
+                    }
+                  </div>
+                )
+              })
+            }
+        </div>
       </div>
     </Layout>
     </>

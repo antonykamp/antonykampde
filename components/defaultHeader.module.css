@@ -4,32 +4,29 @@
 
 .title {
   font-weight: 800;
-  padding-bottom: 1rem;
 }
 
 .menu {
   font-size: 1.7rem;
 }
 
+.titleMenu {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 960px) {
-  .titleMenu {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
   .header {
     margin-bottom: 3rem;
   }
 }
 @media (max-width: 960px) {
   .titleMenu {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
     text-align: center;
   }
   .header {
-    margin-bottom: 1.7rem;
+    margin-bottom: 0.5rem;
   }
 }
 
