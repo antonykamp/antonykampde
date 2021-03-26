@@ -11,7 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AwardBox, AwardItem } from "../components/awardBox";
 import { getAwardData } from "../lib/getAwardData";
 import style from "./index.module.css";
-import "./index.module.css";
+import utilStyle from "../styles/utils.module.css"
+
 import Head from "next/head";
 export default function Home({
   project,
@@ -32,9 +33,9 @@ export default function Home({
           scientific software projects and study IT-Systems Engineering B.Sc. at the HPI, Potsdam."/>
     </Head>
     <Layout head>
-      <div className={style.component}>
-        <h2 className={style.subtitles}>Hi! I'm Antony 👋</h2>
-        <p className={style.introduction}>
+      <div className={utilStyle.container}>
+        <h2 className={utilStyle.heading}>Hi! I'm Antony 👋</h2>
+        <p className={utilStyle.pageDescription}>
           I'm currently studying IT-Systems Engineering B.Sc. at the Hasso
           Plattner Insitute, University Potsdam. I also work on various exciting
           scientific software projects like symfit, sfepy, and GPflow. Producing
@@ -43,8 +44,8 @@ export default function Home({
         </p>
       </div>
 
-      <div className={style.component}>
-        <h2 className={style.subtitles}>Skills</h2>
+      <div className={utilStyle.container}>
+        <h2 className={utilStyle.subHeading}>Skills</h2>
         <div className={style.skillBars}>
           <Skill skillName="Motivation" skillLevel={100} />
           <Skill skillName="Learning Speed" skillLevel={90} />
@@ -55,14 +56,14 @@ export default function Home({
         </div>
       </div>
 
-      <div className={style.component}>
+      <div className={utilStyle.container}>
         <div className={style.projectAndContribution}>
           <ProjectBoxHome {...contribution} />
           <ProjectBoxHome {...project} />
         </div>
       </div>
-      <div className={style.component}>
-        <h2 className={style.subtitles}>Education {" & "} Work</h2>
+      <div className={utilStyle.container}>
+        <h2 className={utilStyle.subHeading}>Education {" & "} Work</h2>
         {bio.map((bioItem) => {
           return (
             <div
@@ -85,8 +86,8 @@ export default function Home({
         })}
       </div>
 
-      <div className={style.component}>
-        <h2 className={style.subtitles}>Awards</h2>
+      <div className={utilStyle.container}>
+        <h2 className={utilStyle.subHeading}>Awards</h2>
         {awards.map((awardItem) => {
           return (
             <div

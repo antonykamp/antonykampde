@@ -1,6 +1,6 @@
 {
     "name": "antonykamp.de",
-    "introduction": "My website you're looking at.",
+    "introduction": "A minimal nextJS template you're looking at.",
     "tags": ["nextjs", "typescript"],
     "sections": [
       {

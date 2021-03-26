@@ -1,0 +1,39 @@
+@media (min-width: 960px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .subHeading {
+    font-size: 2.75rem;
+  }
+  .pageDescription {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    margin: 2rem;
+  }
+}
+@media (max-width: 960px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  .subHeading {
+    font-size: 2.25rem;
+  }
+  .pageDescription {
+    font-size: 1.2rem;
+  }
+  .container {
+    margin: 1.5rem;
+  }
+}
+
+.heading {
+  font-weight: 700;
+  padding-bottom: 0.7rem;
+}
+
+.subHeading {
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}

@@ -8,10 +8,26 @@
 
 .awardTitle {
     color: #153351;
-    font-size: 1.3rem;
+
+}
+
+@media (min-width: 960px) {
+    .awardTitle {
+        font-size: 1.4rem;
+    }
+    .awardLocation {
+        font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 960px) {
+    .awardTitle {
+        font-size: 1.3rem;
+    }
+    .awardLocation {
+        font-size: 1.4rem;
+    }
 }
 
 .awardLocation {
-    font-size: 1.5rem;
     font-weight: 700;
 }

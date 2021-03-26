@@ -1,18 +1,10 @@
-.component {
-  margin: 2rem;
-}
-
-.introduction {
-  font-size: 1.4rem;
-}
-
 .skillBars {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-  max-width: 700px;
+  max-width: 900px;
   text-align: left;
 }
 
@@ -23,12 +15,6 @@
   justify-content: space-evenly;
   align-items: flex-start;
   max-width: 960px;
-}
-
-.subtitles {
-  font-size: 3rem;
-  font-weight: 700;
-  padding-bottom: 1rem;
 }
 
 @media (min-width: 960px) {

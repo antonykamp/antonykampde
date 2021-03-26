@@ -17,6 +17,22 @@
     font-weight: 700;
 }
 
-.totalDescription {
-    font-size: 1.2rem;
+@media (min-width: 960px) {
+    .headingDate {
+        font-size: 1.5rem;
+    }
+    .totalDescription {
+        font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 960px) {
+    .headingDate {
+        font-size: 1.4rem;
+    }
+    .totalDescription {
+        font-size: 1.2rem;
+    }
 }
+
+
+
