@@ -4,11 +4,17 @@ import path from "path";
 import { getAllProjectData } from "../lib/getProjectData";
 import { InferGetStaticPropsType } from "next";
 import style from "./contributions.module.css";
+import Head from "next/head";
 
 export default function Contributions({
   contributionProjects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
+    <>
+    <Head>
+      <title>Antony Kamp | Contributions</title>
+      <meta name="description" content="Things I have contributed to."/>
+    </Head>
     <Layout>
       <div className={style.component}>
         <h1 className={style.title}>Contributions</h1>
@@ -31,6 +37,7 @@ export default function Contributions({
         })}
       </div>
     </Layout>
+    </>
   );
 }
 

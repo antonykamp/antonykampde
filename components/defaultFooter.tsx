@@ -6,9 +6,9 @@ import { dom } from "@fortawesome/fontawesome-svg-core";
 import styles from "./defaultFooter.module.css";
 
 const SocialNetworks = [
-  { logo: faEnvelope, link: "mailto:info@antonykamp.de" },
-  { logo: faGithub, link: "https://github.com/antonykamp" },
-  { logo: faLinkedin, link: "https://cz-gymnasium.jena.de" },
+  { logo: faEnvelope, link: "mailto:info@antonykamp.de", title: "Send mail" },
+  { logo: faGithub, link: "https://github.com/antonykamp", title: "Show Github profile" },
+  { logo: faLinkedin, link: "", title: "Show LinkedIn profile" },
 ];
 export default function DefaultFooter() {
   return (
@@ -18,8 +18,8 @@ export default function DefaultFooter() {
         {SocialNetworks.map((item) => {
           return (
             <Link key={item.link} href={item.link}>
-              <a className={styles.logoLink}>
-                <FontAwesomeIcon size="2x" icon={item.logo} />
+              <a className={styles.logoLink} target="_blank">
+                <FontAwesomeIcon title={item.title} size="2x" icon={item.logo} />
               </a>
             </Link>
           );

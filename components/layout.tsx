@@ -7,8 +7,11 @@ export default function Layout({ head = false, children }) {
   return (
     <div className={style.main}>
       <Head>
-        <title>Antony Kamp</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
+        <meta charSet="utf-8"/>
+        <meta name="keywords" content="Antony Kamp, Developer, Project, Contribution, Science, HPI, Potsdam, Jena"/>
+        <meta name="author" content="Antony Kamp" />
+        <meta name="copyright" content="Antony Kamp" />
       </Head>
       <DefaultHeader head={head} />
       <main className={style.body}>{children}</main>

@@ -12,6 +12,7 @@ import { AwardBox, AwardItem } from "../components/awardBox";
 import { getAwardData } from "../lib/getAwardData";
 import style from "./index.module.css";
 import "./index.module.css";
+import Head from "next/head";
 export default function Home({
   project,
   contribution,
@@ -24,6 +25,12 @@ export default function Home({
   awards: AwardItem[];
 }) {
   return (
+    <>
+    <Head>
+      <title>Antony Kamp | Resume</title>
+      <meta name="description" content="Hi! I'm Antony 👋 I work on various exciting
+          scientific software projects and study IT-Systems Engineering B.Sc. at the HPI, Potsdam."/>
+    </Head>
     <Layout head>
       <div className={style.component}>
         <h2 className={style.subtitles}>Hi! I'm Antony 👋</h2>
@@ -102,6 +109,7 @@ export default function Home({
         })}
       </div>
     </Layout>
+    </>
   );
 }
 
