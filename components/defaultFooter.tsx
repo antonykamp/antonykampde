@@ -8,7 +8,7 @@ import styles from "./defaultFooter.module.css";
 const SocialNetworks = [
   { logo: faEnvelope, link: "mailto:info@antonykamp.de", title: "Send mail" },
   { logo: faGithub, link: "https://github.com/antonykamp", title: "Show Github profile" },
-  { logo: faLinkedin, link: "", title: "Show LinkedIn profile" },
+  { logo: faLinkedin, link: "https://www.linkedin.com/in/antony-kamp-10068320a/", title: "Show LinkedIn profile" },
 ];
 export default function DefaultFooter() {
   return (
