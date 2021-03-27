@@ -37,17 +37,31 @@
     margin-right: 0.3rem;
 }
 
-.projectBox {
-    padding: 1rem;
+.projectOutherBox {
     border-radius: 10px;
     border-width: 2px;
     width: 24rem;
+}
+
+.projectInnerBox {
+    padding: 1rem;
     text-align: left;
 }
 
 .toggleTail {
     overflow: hidden;
     transition: max-height 1s ease;
+}
+
+.clickToExpand {
+    background-color: #EDF2F7;
+    align-self: center;
+    text-align: center;
+    color: #273f5c;
+}
+
+.clickToExpand:hover{
+    background-color: #E2E8F0;
 }
 
 .linkBox {

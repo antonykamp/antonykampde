@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./projectBox.module.css";
-import Link from 'next/link'
-import { ProjectBadges, ProjectBadge } from "./ProjectBadge"
+import Link from "next/link";
+import { ProjectBadges, ProjectBadge } from "./ProjectBadge";
 import { ProjectLink, ProjectLinks } from "./projectLink";
 
 export interface Project {
@@ -34,9 +34,7 @@ export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
       <h2 className={style.projectName}>{name}</h2>
       <div className={style.tagRow}>
         {tags.map((tag) => {
-          return (
-            <ProjectBadge badge={tag}/>
-          );
+          return <ProjectBadge badge={tag} />;
         })}
       </div>
       <p>{introduction}</p>
@@ -46,7 +44,7 @@ export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
 
 interface ProjectTailProps {
   sections: ProjectSection[];
-  links: LinkName[];  
+  links: LinkName[];
   isOpen: boolean;
 }
 export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
@@ -62,7 +60,7 @@ export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
       })}
       <div className={style.linkRow}>
         {links.map(({ name, link }) => {
-          return (<ProjectLink name={name} link={link} />)
+          return <ProjectLink name={name} link={link} />;
         })}
       </div>
     </div>
@@ -77,21 +75,40 @@ export function ProjectBox({
   links,
 }: Project) {
   const [isOpen, setisOpen] = useState(false);
+  const [onHover, setOnHover] = useState(false);
   return (
-    <button
-      className={style.projectBox}
-      onClick={() => {
-        setisOpen(!isOpen);
-      }}
-    >
-      <ProjectHead name={name} tags={tags} introduction={introduction} />
-      <div
-        style={{ maxHeight: isOpen ? "500px" : "0px" }}
-        className={style.toggleTail}
+    <>
+      <button
+        className={style.projectOutherBox}
+        onClick={() => {
+          setisOpen(!isOpen);
+        }}
+        onMouseEnter={() => {
+          setOnHover(true);
+        }}
+        onMouseLeave={() => {
+          setOnHover(false);
+        }}
       >
-        <ProjectTail sections={sections} links={links} isOpen={isOpen} />
-      </div>
-    </button>
+        <div className={style.projectInnerBox}>
+          <ProjectHead name={name} tags={tags} introduction={introduction} />
+          <div
+            style={{ maxHeight: isOpen ? "500px" : "0px" }}
+            className={style.toggleTail}
+          >
+            <ProjectTail sections={sections} links={links} isOpen={isOpen} />
+          </div>
+        </div>
+        <div
+          style={{ maxHeight: onHover && !isOpen ? "100px" : "0px" }}
+          className={style.toggleTail}
+        >
+          <div className={style.clickToExpand}>
+            <p>click to expand</p>
+          </div>
+        </div>
+      </button>
+    </>
   );
 }
 
@@ -108,18 +125,15 @@ export function ProjectBoxHome({
   isProject = false,
 }: ProjectBoxHome) {
   return (
-    <div
-      className={style.boxHome}>
-      <div style={{padding: "1rem"}}>
+    <div className={style.boxHome}>
+      <div style={{ padding: "1rem" }}>
         <ProjectHead name={name} tags={tags} introduction={introduction} />
       </div>
       <Link href={"/" + (isProject ? "projects" : "contributions")}>
         <a>
-        <div className={style.linkBox}>
-          <p>
-            see more {isProject ? "projects" : "contributions"}
-          </p>
-        </div>  
+          <div className={style.linkBox}>
+            <p>see more {isProject ? "projects" : "contributions"}</p>
+          </div>
         </a>
       </Link>
     </div>
