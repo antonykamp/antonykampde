@@ -8,6 +8,18 @@
 
 .menu {
   font-size: 1.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around ;
+  max-width: 400px;
+}
+
+.menuItem {
+  text-align: center;
+}
+.menuItem:hover {
+  font-weight: bold;
+  transition: font-weight 4 ease-in;
 }
 
 .titleMenu {

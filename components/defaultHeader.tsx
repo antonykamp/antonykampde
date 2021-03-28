@@ -18,25 +18,37 @@ export default function DefaultHeader({ head = false }) {
             className={style.title}
             style={{
               fontSize: head ? "6rem" : "3rem",
-              lineHeight: head? "6rem": "3rem",
-              paddingBottom: head? "1rem": "0.5rem"
+              lineHeight: head ? "6rem" : "3rem",
+              paddingBottom: head ? "1rem" : "0.5rem",
             }}
           >
             Antony Kamp
           </h1>
-          <p className={style.menu}>
+          <div className={style.menu}>
             <Link href="/">
-              <a>about</a>
+              <a>
+                <div style={{ width: "4.7rem" }} className={style.menuItem}>
+                  about
+                </div>
+              </a>
             </Link>
-            {" - "}
+            <p>{" / "}</p>
             <Link href="/projects">
-              <a>projects</a>
+              <a>
+              <div style={{ width: "6.4rem" }} className={style.menuItem}>
+                projects
+                </div>
+                </a>
             </Link>
-            {" - "}
+            <p>{" / "}</p>
             <Link href="/contributions">
-              <a>contributions</a>
+              <a>
+              <div style={{ width: "10.8rem" }} className={style.menuItem}>
+                contributions
+                </div>
+              </a>
             </Link>
-          </p>
+          </div>
         </div>
       </header>
     </>
