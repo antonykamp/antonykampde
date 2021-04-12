@@ -15,15 +15,11 @@
     "links": [
       {
         "name": "GitHub",
-        "color": "gray",
-        "link": "https://github.com/sfepy/sfepy",
-        "logo": ["fab", "github"]
+        "link": "https://github.com/sfepy/sfepy"
       },
       {
         "name": "Documentation",
-        "color": "cyan",
-        "link": "https://sfepy.org",
-        "logo": ["fas", "book-open"]
+        "link": "https://sfepy.org"
       }
     ]
   }

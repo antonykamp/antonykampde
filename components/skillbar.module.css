@@ -1,0 +1,38 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.skillName {
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+
+.progress {
+  width: 21rem;
+  height: 0.8rem;
+  border-radius: 20px;
+  border-width: 1.5px;
+  justify-content: center;
+}
+
+.progress::-webkit-progress-bar {
+  border: 0;
+  height: 0.6rem;
+  background-color: #153351;
+  border-radius: 5px;
+}
+.progress::-webkit-progress-value {
+  border: 0;
+  height: 0.6rem;
+  background-color: #153351;
+  border-radius: 5px;
+}
+.progress::-moz-progress-bar {
+  border: 0;
+  height: 0.6rem;
+  background-color: #153351;
+  border-radius: 5px;
+}

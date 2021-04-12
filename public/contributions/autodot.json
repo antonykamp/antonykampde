@@ -15,9 +15,7 @@
     "links": [
       {
         "name": "GitHub",
-        "color": "gray",
-        "link": "https://github.com/oxquantum-repo/AutoDot",
-        "logo": ["fab", "github"]
+        "link": "https://github.com/oxquantum-repo/AutoDot"
       }
     ]
   }

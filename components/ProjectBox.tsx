@@ -1,13 +1,13 @@
 import { useState } from "react";
 import style from "./projectBox.module.css";
 import Link from "next/link";
-import { ProjectBadges, ProjectBadge } from "./ProjectBadge";
-import { ProjectLink, ProjectLinks } from "./projectLink";
+import { ProjectBadge } from "./ProjectBadge";
+import { ProjectLink } from "./ProjectLink";
 
 export interface Project {
   name: string;
   introduction: string;
-  tags: ProjectBadges[];
+  tags: ProjectBadge[];
   sections: ProjectSection[];
   links: LinkName[];
   isProject?: boolean;
@@ -19,13 +19,13 @@ interface ProjectSection {
 }
 
 interface LinkName {
-  name: ProjectLinks;
+  name: string;
   link: string;
 }
 
 interface ProjectHeadProps {
   name: string;
-  tags: ProjectBadges[];
+  tags: ProjectBadge[];
   introduction: string;
 }
 export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
@@ -75,46 +75,19 @@ export function ProjectBox({
   links,
 }: Project) {
   const [isOpen, setisOpen] = useState(false);
-  const [onHover, setOnHover] = useState(false);
   return (
-    <>
-      <button
-        className={style.projectOutherBox}
-        onClick={() => {
-          setisOpen(!isOpen);
-        }}
-        onMouseEnter={() => {
-          setOnHover(true);
-        }}
-        onMouseLeave={() => {
-          setOnHover(false);
-        }}
-      >
-        <div className={style.projectInnerBox}>
-          <ProjectHead name={name} tags={tags} introduction={introduction} />
-          <div
-            style={{ maxHeight: isOpen ? "500px" : "0px" }}
-            className={style.toggleTail}
-          >
-            <ProjectTail sections={sections} links={links} isOpen={isOpen} />
-          </div>
-        </div>
-        <div
-          style={{ maxHeight: onHover && !isOpen ? "100px" : "0px" }}
-          className={style.toggleTail}
-        >
-          <div className={style.clickToExpand}>
-            <p>click to expand</p>
-          </div>
-        </div>
-      </button>
-    </>
+    <div className={style.projectOutherBox}>
+      <div className={style.projectInnerBox}>
+        <ProjectHead name={name} tags={tags} introduction={introduction} />
+        <ProjectTail sections={sections} links={links} isOpen={isOpen} />
+      </div>
+    </div>
   );
 }
 
 interface ProjectBoxHome {
   name: string;
-  tags: ProjectBadges[];
+  tags: ProjectBadge[];
   introduction: string;
   isProject?: boolean;
 }

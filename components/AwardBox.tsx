@@ -1,5 +1,4 @@
-import Link from "next/link";
-import style from "./awardBox.module.css"
+import style from "./awardBox.module.css";
 export interface AwardItem {
   date: string;
   title: string;
@@ -11,17 +10,9 @@ export function AwardBox({ date, title, location, locationLink }: AwardItem) {
   return (
     <div className={style.mainDiv}>
       <p className={style.awardLocation}>
-        {locationLink ? (
-          <Link href={locationLink}>
-            <a>{location}</a>
-          </Link>
-        ) : (
-          location
-        )}
+        {locationLink ? <a href={locationLink}>{location}</a> : location}
       </p>
-      <p className={style.awardTitle}>
-        {title}
-      </p>
+      <p className={style.awardTitle}>{title}</p>
       <p className={style.awardDate}>{date}</p>
     </div>
   );

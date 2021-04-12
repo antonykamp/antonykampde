@@ -1,5 +1,5 @@
 import fs from "fs";
-import { AwardItem } from "../components/awardBox";
+import { AwardItem } from "../components/AwardBox";
 
 export function getAwardData(projectFile: string): AwardItem[] {
   const awardsContent = fs.readFileSync(projectFile, "utf-8");

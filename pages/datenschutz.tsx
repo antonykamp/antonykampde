@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./datenschutz.module.css";
@@ -74,10 +74,7 @@ export default function Datenschutz() {
             <p>Germany</p>
             <p>
               E-Mail-Adresse:{" "}
-              <Link href="mailto:info@antonykamp.de">
-                <a>info@antonykamp.de</a>
-              </Link>
-              .
+              <a href="mailto:info@antonykamp.de">info@antonykamp.de</a>.
             </p>
           </div>
           <div className={utilStyle.container}>
@@ -413,11 +410,12 @@ export default function Datenschutz() {
               Zertifizierungen oder verbindlicher internen
               Datenschutzvorschriften verarbeiten (Art. 44 bis 49 DSGVO,
               Informationsseite der EU-Kommission:{" "}
-              <Link href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de">
-                <a target="_blank">
-                  https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de
-                </a>
-              </Link>
+              <a
+                href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de"
+                target="_blank"
+              >
+                https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de
+              </a>
               ).
             </p>
           </div>
@@ -584,13 +582,13 @@ export default function Datenschutz() {
               kann). Ein Widerspruch gegen den Einsatz von Cookies zu Zwecken
               des Onlinemarketings kann auch mittels einer Vielzahl von
               Diensten, vor allem im Fall des Trackings, über die Webseiten{" "}
-              <Link href="https://optout.aboutads.info">
-                <a target="_blank">https://optout.aboutads.info</a>
-              </Link>{" "}
+              <a href="https://optout.aboutads.info" target="_blank">
+                https://optout.aboutads.info
+              </a>{" "}
               und{" "}
-              <Link href="https://www.youronlinechoices.com/">
-                <a target="_blank">https://www.youronlinechoices.com/</a>
-              </Link>{" "}
+              <a href="https://www.youronlinechoices.com/" target="_blank">
+                https://www.youronlinechoices.com/
+              </a>{" "}
               erklärt werden. Daneben können Sie weitere Widerspruchshinweise im
               Rahmen der Angaben zu den eingesetzten Dienstleistern und Cookies
               erhalten.
@@ -1105,11 +1103,9 @@ export default function Datenschutz() {
           </div>
           <div className={utilStyle.container}>
             <p>
-              <Link href="https://datenschutz-generator.de/?l=de">
-                <a target="_blank">
-                  Quelle: Datenschutz-Generator.de von Dr. Thomas Schwenke
-                </a>
-              </Link>
+              <a href="https://datenschutz-generator.de/?l=de" target="_blank">
+                Quelle: Datenschutz-Generator.de von Dr. Thomas Schwenke
+              </a>
             </p>
           </div>
         </div>

@@ -21,9 +21,7 @@
       },
       {
         "name": "Documentation",
-        "color": "cyan",
-        "link": "https://gpflow.readthedocs.io",
-        "logo": ["fas", "book-open"]
+        "link": "https://gpflow.readthedocs.io"
       }
     ]
   }

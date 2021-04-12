@@ -1,33 +1,32 @@
 .mainDiv {
-    text-align: left;
+  text-align: left;
 }
 
 .awardDate {
-    color: gray;
+  color: gray;
 }
 
 .awardTitle {
-    color: #153351;
-
+  color: #153351;
 }
 
 @media (min-width: 960px) {
-    .awardTitle {
-        font-size: 1.4rem;
-    }
-    .awardLocation {
-        font-size: 1.5rem;
-    }
+  .awardTitle {
+    font-size: 1.4rem;
   }
-  @media (max-width: 960px) {
-    .awardTitle {
-        font-size: 1.3rem;
-    }
-    .awardLocation {
-        font-size: 1.4rem;
-    }
+  .awardLocation {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 960px) {
+  .awardTitle {
+    font-size: 1.3rem;
+  }
+  .awardLocation {
+    font-size: 1.4rem;
+  }
 }
 
 .awardLocation {
-    font-weight: 700;
+  font-weight: 700;
 }

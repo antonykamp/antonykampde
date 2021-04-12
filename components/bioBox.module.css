@@ -1,38 +1,35 @@
 .locationLink {
-    color: #273f5c;
+  color: #273f5c;
 }
 
 .locationLink:hover {
-    color: black
+  color: black;
 }
 
 .mainDiv {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .headingDate {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 @media (min-width: 960px) {
-    .headingDate {
-        font-size: 1.5rem;
-    }
-    .totalDescription {
-        font-size: 1.3rem;
-    }
+  .headingDate {
+    font-size: 1.5rem;
   }
-  @media (max-width: 960px) {
-    .headingDate {
-        font-size: 1.4rem;
-    }
-    .totalDescription {
-        font-size: 1.2rem;
-    }
+  .totalDescription {
+    font-size: 1.3rem;
+  }
 }
-
-
-
+@media (max-width: 960px) {
+  .headingDate {
+    font-size: 1.4rem;
+  }
+  .totalDescription {
+    font-size: 1.2rem;
+  }
+}
