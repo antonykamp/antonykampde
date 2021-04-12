@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { Project } from "../components/projectBox";
+import { Project } from "../components/ProjectBox";
 
 export function getAllProjectData(projectDirectory: string): Project[] {
   const fileNames = fs.readdirSync(projectDirectory);

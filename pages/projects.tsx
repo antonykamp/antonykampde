@@ -1,8 +1,7 @@
-import Layout from "../components/layout";
-import { Project, ProjectBox } from "../components/projectBox";
+import Layout from "../components/Layout";
+import { Project, ProjectBox } from "../components/ProjectBox";
 import path from "path";
-import { getAllProjectData } from "../lib/getProjectData";
-import Link from "next/link";
+import { getAllProjectData } from "../lib/GetProjectData";
 import utilStyle from "../styles/utils.module.css";
 import listUtilStyle from "../styles/projectListUtils.module.css";
 import Head from "next/head";
@@ -12,13 +11,15 @@ export default function Projects({
 }: {
   projectProjects: Project[];
 }) {
-  const COLUMN_NUM = 2
-  let columns: Project[][] = []
+  const COLUMN_NUM = 3;
+  let columns: Project[][] = [];
 
-  for (let col = 0; col < COLUMN_NUM; col++){
-    columns.push(projectProjects.filter(project => {
-      return projectProjects.indexOf(project) % COLUMN_NUM == col
-    }))
+  for (let col = 0; col < COLUMN_NUM; col++) {
+    columns.push(
+      projectProjects.filter((project) => {
+        return projectProjects.indexOf(project) % COLUMN_NUM == col;
+      })
+    );
   }
   return (
     <>
@@ -32,35 +33,30 @@ export default function Projects({
           <p className={utilStyle.pageDescription}>
             Things I have worked on. <br />
             Most of the projects were created with friends, for example,
-            activity. But many of them are waiting for new contributors. Don't
-            let them wait and take a look at{" "}
-            <Link href="https://github.com/antonykamp/">
-              <a target="_blank">Github</a>
-            </Link>
-            😀
+            activity. But many of them are looking forward to see some new
+            contributors 😀
           </p>
         </div>
         <div className={utilStyle.container}>
-        <div className={listUtilStyle.projectTable}>
-            {
-              columns.map(column => {
-                return (
-                  <div className={listUtilStyle.projectColumn}>
-                    {
-                      column.map(contribution => {
-                        return (
-                          <div key={contribution.name} className={listUtilStyle.projectItem}>
-                          <ProjectBox {...contribution} />
-                        </div>
-                        )
-                      })
-                    }
-                  </div>
-                )
-              })
-            }
+          <div className={listUtilStyle.projectTable}>
+            {columns.map((column) => {
+              return (
+                <div className={listUtilStyle.projectColumn}>
+                  {column.map((contribution) => {
+                    return (
+                      <div
+                        key={contribution.name}
+                        className={listUtilStyle.projectItem}
+                      >
+                        <ProjectBox {...contribution} />
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
       </Layout>
     </>
   );

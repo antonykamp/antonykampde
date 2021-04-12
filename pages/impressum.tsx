@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
-import Layout from "../components/layout";
-import utilStyle from "../styles/legalUtils.module.css"
+import Layout from "../components/Layout";
+import utilStyle from "../styles/legalUtils.module.css";
 
 export default function Impressum() {
   return (
@@ -23,9 +22,7 @@ export default function Impressum() {
             <h2 className={utilStyle.subHeading}>Kontaktmöglichkeiten</h2>
             <p>
               E-Mail-Adresse:{" "}
-              <Link href="mailto:info@antonykamp.de">
-                <a>info@antonykamp.de</a>
-              </Link>
+              <a href="mailto:info@antonykamp.de">info@antonykamp.de</a>
             </p>
           </div>
         </div>

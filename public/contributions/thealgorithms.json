@@ -15,15 +15,11 @@
     "links": [
       {
         "name": "GitHub",
-        "color": "gray",
-        "link": "https://github.com/TheAlgorithms",
-        "logo": ["fab", "github"]
+        "link": "https://github.com/TheAlgorithms"
       },
       {
         "name": "the-algorithms.com/",
-        "color": "gray",
-        "link": "https://the-algorithms.com/",
-        "logo": ["fas", "archive"]
+        "link": "https://the-algorithms.com/"
       }
     ]
   }

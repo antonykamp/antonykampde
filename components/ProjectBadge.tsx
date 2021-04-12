@@ -1,35 +1,48 @@
 import style from "./projectBadge.module.css";
 
+export type ProjectBadge = keyof typeof ProjectBadges;
+const ProjectBadges = {
+  python: {
+    backgroundColor: "#bee3f8",
+    fontColor: "#2a4365",
+  },
+  blitz: {
+    backgroundColor: "#FEFCBF",
+    fontColor: "#744210",
+  },
+  science: {
+    backgroundColor: "#FEFCBF",
+    fontColor: "#234E52",
+  },
+  cpp: {
+    backgroundColor: "#FED7E2",
+    fontColor: "#702459",
+  },
+  nextjs: {
+    backgroundColor: "#C6F6D5",
+    fontColor: "#22543D",
+  },
+  typescript: {
+    backgroundColor: "#C4F1F9",
+    fontColor: "#086F83",
+  },
+};
 
-export enum ProjectBadges {
-    python = "python",
-    blitz = "blitz",
-    science = "science",
-    cpp = "cpp",
-    nextjs = "nextjs",
-    typescript = "typescript",
-  }
-
-export function ProjectBadge({badge}: {badge: ProjectBadges}){
-    const backgroundColor = {
-        python: "#bee3f8",
-        blitz: "#FEFCBF",
-        science: "#B2F5EA",
-        cpp: "#FED7E2",
-        nextjs: "#C6F6D5",
-        typescript: "#C4F1F9",
-    }
-    const fontColor = {
-        python: "#2a4365",
-        blitz: "#744210",
-        science: "#234E52",
-        cpp: "#702459",
-        nextjs: "#22543D",
-        typescript: "#086F83",
-    }
-    return (
-        <div className={style.badgeObject} style={{backgroundColor: backgroundColor[badge], borderColor:fontColor[badge] }}>
-            <span className={style.badgeTitle} style={{color: fontColor[badge]}}>{badge}</span>
-        </div>
-    )
+export function ProjectBadge({ badge }: { badge: keyof typeof ProjectBadges }) {
+  return (
+    <div
+      className={style.badgeObject}
+      style={{
+        backgroundColor: ProjectBadges[badge].backgroundColor,
+        border: ProjectBadges[badge].fontColor,
+      }}
+    >
+      <span
+        className={style.badgeTitle}
+        style={{ color: ProjectBadges[badge].fontColor }}
+      >
+        {badge}
+      </span>
+    </div>
+  );
 }

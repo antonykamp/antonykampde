@@ -37,3 +37,7 @@
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
+
+.pageDescription {
+  max-width: min(100vw, 1000px);
+}

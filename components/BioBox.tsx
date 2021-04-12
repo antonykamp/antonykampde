@@ -1,5 +1,5 @@
-import Link from "next/link";
-import style from "./bioBox.module.css"
+import style from "./bioBox.module.css";
+
 export interface BioItem {
   startDate: string;
   endDate?: string;
@@ -24,9 +24,9 @@ export function BioBox({
       <p className={style.totalDescription}>
         {jobDescription}
         {locationLink ? (
-          <Link href={locationLink}>
-            <a className={style.locationLink}>{" @" + location}</a>
-          </Link>
+          <a href={locationLink} className={style.locationLink}>
+            {" @" + location}
+          </a>
         ) : (
           " @" + location
         )}
