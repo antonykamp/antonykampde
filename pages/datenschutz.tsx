@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import style from "./datenschutz.module.css";
 import utilStyle from "../styles/legalUtils.module.css";
 import Head from "next/head";
@@ -53,7 +54,7 @@ export default function Datenschutz() {
                 <div className={style.listRow}>
                   <div className={style.listIcon}>
                     <FontAwesomeIcon
-                      icon={["fas", "chevron-right"]}
+                      icon={faChevronRight}
                       color="#153351"
                     />
                   </div>
@@ -95,7 +96,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -104,7 +105,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -113,7 +114,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -122,7 +123,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -132,7 +133,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -142,7 +143,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -152,7 +153,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -168,7 +169,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -177,7 +178,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -186,7 +187,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -199,7 +200,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -208,7 +209,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -217,7 +218,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -226,7 +227,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -235,7 +236,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -259,7 +260,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -273,7 +274,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -291,7 +292,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -306,7 +307,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -446,7 +447,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -462,7 +463,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -479,7 +480,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -491,7 +492,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -507,7 +508,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -524,7 +525,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -622,7 +623,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -636,7 +637,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -648,7 +649,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -712,7 +713,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -727,7 +728,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -739,7 +740,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -753,7 +754,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -810,7 +811,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -825,7 +826,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -837,7 +838,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -849,7 +850,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -921,7 +922,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -945,7 +946,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -957,7 +958,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -972,7 +973,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -986,7 +987,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -1003,7 +1004,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -1018,7 +1019,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -1050,7 +1051,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -1072,7 +1073,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
@@ -1087,7 +1088,7 @@ export default function Datenschutz() {
             <div className={style.listRow}>
               <div className={style.listIcon}>
                 <FontAwesomeIcon
-                  icon={["fas", "chevron-right"]}
+                  icon={faChevronRight}
                   color="#153351"
                 />
               </div>
