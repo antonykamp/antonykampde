@@ -1,0 +1,26 @@
+{
+  "name": "entel.me",
+  "introduction": "Share your needs!",
+  "tags": ["blitz", "typescript"],
+  "sections": [
+    {
+      "title": "Goal of the project",
+      "content": "Replace the unnecessary walk to the next supermarket by a new shoppinglist in entel. If you are going to the store, help others close to you by accepting their shopping list and bring them the products they need!"
+    },
+    {
+      "title": "Future",
+      "content": "In the future, we want to make the app more intuitive, for example, by replacing mails with push notifications."
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/entel-me/entel"
+    },
+    {
+      "name": "entel.me",
+      "link": "https://entel.me"
+    }
+  ],
+  "isProject": true
+}
