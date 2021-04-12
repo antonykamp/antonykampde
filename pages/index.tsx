@@ -12,6 +12,7 @@ import { AwardBox, AwardItem } from "../components/AwardBox";
 import { getAwardData } from "../lib/GetAwardData";
 import style from "./index.module.css";
 import utilStyle from "../styles/utils.module.css";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
 import Head from "next/head";
 export default function Home({
@@ -79,7 +80,7 @@ export default function Home({
                 <div className={style.itemIcon}>
                   <FontAwesomeIcon
                     size="2x"
-                    icon={["fas", "chevron-right"]}
+                    icon={faChevronRight}
                     color="#153351"
                   />
                 </div>
@@ -103,7 +104,7 @@ export default function Home({
                 <div className={style.itemIcon}>
                   <FontAwesomeIcon
                     size="2x"
-                    icon={["fas", "chevron-right"]}
+                    icon={faChevronRight}
                     color="#153351"
                   />
                 </div>
