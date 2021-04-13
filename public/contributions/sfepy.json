@@ -21,6 +21,7 @@
         "name": "Documentation",
         "link": "https://sfepy.org"
       }
-    ]
+    ],
+    "prio": 1
   }
   

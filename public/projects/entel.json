@@ -22,5 +22,6 @@
       "link": "https://entel.me"
     }
   ],
-  "isProject": true
+  "isProject": true,
+  "prio": 4
 }

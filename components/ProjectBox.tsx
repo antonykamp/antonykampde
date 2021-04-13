@@ -11,6 +11,7 @@ export interface Project {
   sections: ProjectSection[];
   links: LinkName[];
   isProject?: boolean;
+  prio?: number;
 }
 
 interface ProjectSection {

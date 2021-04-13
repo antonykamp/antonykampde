@@ -23,6 +23,7 @@
         "name": "Documentation",
         "link": "https://gpflow.readthedocs.io"
       }
-    ]
+    ],
+    "prio": 2
   }
   

@@ -18,6 +18,7 @@
         "link": "https://quizbot.readthedocs.io"
       }
     ],
-    "isProject": true
+    "isProject": true,
+    "prio": 3
   }
   
