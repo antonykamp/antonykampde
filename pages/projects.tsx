@@ -13,7 +13,7 @@ export default function Projects({
 }) {
   const COLUMN_NUM = 3;
   let columns: Project[][] = [];
-
+  projectProjects = projectProjects.sort((p1, p2) => (p2.prio || 0) - (p1.prio || 0))
   for (let col = 0; col < COLUMN_NUM; col++) {
     columns.push(
       projectProjects.filter((project) => {

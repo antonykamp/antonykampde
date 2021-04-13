@@ -23,5 +23,6 @@
       "name": "Documentation",
       "link": "https://symfit.readthedocs.org"
     }
-  ]
+  ],
+  "prio": 4
 }
