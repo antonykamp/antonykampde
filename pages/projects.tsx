@@ -5,12 +5,11 @@ import { getAllProjectData } from "../lib/GetProjectData";
 import utilStyle from "../styles/utils.module.css";
 import listUtilStyle from "../styles/projectListUtils.module.css";
 import Head from "next/head";
+import { InferGetStaticPropsType } from "next";
 
 export default function Projects({
   projectProjects,
-}: {
-  projectProjects: Project[];
-}) {
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const COLUMN_NUM = 3;
   let columns: Project[][] = [];
   projectProjects = projectProjects.sort((p1, p2) => (p2.prio || 0) - (p1.prio || 0))

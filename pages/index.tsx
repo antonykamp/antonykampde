@@ -13,19 +13,15 @@ import { getAwardData } from "../lib/GetAwardData";
 import style from "./index.module.css";
 import utilStyle from "../styles/utils.module.css";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
-
 import Head from "next/head";
+import { InferGetStaticPropsType } from "next";
+
 export default function Home({
   project,
   contribution,
   bio,
   awards,
-}: {
-  project: Project;
-  contribution: Project;
-  bio: BioItem[];
-  awards: AwardItem[];
-}) {
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
       <Head>
