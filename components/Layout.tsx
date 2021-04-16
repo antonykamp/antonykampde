@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Footer from "./Footer";
-import Header from "./Header";
 import style from "./layout.module.css";
 
 export default function Layout({ children }) {
@@ -16,7 +15,6 @@ export default function Layout({ children }) {
         <meta name="author" content="Antony Kamp" />
         <meta name="copyright" content="Antony Kamp" />
       </Head>
-      <Header />
       <main className={style.body}>{children}</main>
       <Footer />
     </div>
