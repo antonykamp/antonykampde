@@ -1,17 +1,17 @@
-.heading {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.subHeading {
-    margin-bottom: 0.3rem;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
 .container {
-    margin-top: 0.8rem;
-    text-align: left;
+  margin-top: 0.8rem;
+  text-align: left;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+.listIcon {
+  margin-right: 0.8rem;
+}
+
+.listRow {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }

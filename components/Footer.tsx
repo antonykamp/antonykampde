@@ -7,7 +7,7 @@ import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={styles.footerDiv}>
+    <footer className={styles.footer}>
       <style>{dom.css()}</style>
       <div className={styles.socialNetworks}>
         <a

@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
@@ -32,11 +31,11 @@ export default function Datenschutz() {
         <title>Antony Kamp | Datenschutz</title>
         <meta name="robots" content="noindex"/>
       </Head>
-      <Layout>
+      <main>
         <div className={utilStyle.container}>
-          <h1 className={utilStyle.heading}>Datenschutzerklärung</h1>
+          <h1>Datenschutzerklärung</h1>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading}>Einleitung</h2>
+            <h2>Einleitung</h2>
             <p>
               Mit der folgenden Datenschutzerklärung möchten wir Sie darüber
               aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend
@@ -48,11 +47,11 @@ export default function Datenschutz() {
             <p>Stand: 23. März 2021</p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading}>Inhaltsübersicht</h2>{" "}
+            <h2>Inhaltsübersicht</h2>{" "}
             {tableOfContents.map(({ name, ref }) => {
               return (
-                <div className={style.listRow}>
-                  <div className={style.listIcon}>
+                <div className={utilStyle.listRow}>
+                  <div className={utilStyle.listIcon}>
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       color="#153351"
@@ -66,7 +65,7 @@ export default function Datenschutz() {
             })}
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m3">
+            <h2 id="m3">
               Verantwortlicher
             </h2>
             <p>Antony Kamp</p>
@@ -79,7 +78,7 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="mOverview">
+            <h2 id="mOverview">
               Übersicht der Verarbeitungen
             </h2>
             <p>
@@ -89,12 +88,12 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading}>
+            <h2>
               Arten der verarbeiteten Daten
             </h2>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -102,8 +101,8 @@ export default function Datenschutz() {
               </div>
               Bestandsdaten (z.B. Namen, Adressen).
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -111,8 +110,8 @@ export default function Datenschutz() {
               </div>
               Inhaltsdaten (z.B. Eingaben in Onlineformularen).
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -120,8 +119,8 @@ export default function Datenschutz() {
               </div>
               Kontaktdaten (z.B. E-Mail, Telefonnummern).
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -130,8 +129,8 @@ export default function Datenschutz() {
               Meta-/Kommunikationsdaten (z.B. Geräte-Informationen,
               IP-Adressen).
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -140,8 +139,8 @@ export default function Datenschutz() {
               Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten,
               Zugriffszeiten).
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -150,8 +149,8 @@ export default function Datenschutz() {
               Vertragsdaten (z.B. Vertragsgegenstand, Laufzeit,
               Kundenkategorie).
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -162,12 +161,12 @@ export default function Datenschutz() {
             </div>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading}>
+            <h2>
               Kategorien betroffener Personen
             </h2>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -175,8 +174,8 @@ export default function Datenschutz() {
               </div>
               Geschäfts- und Vertragspartner.
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -184,8 +183,8 @@ export default function Datenschutz() {
               </div>
               Interessenten.
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -195,10 +194,10 @@ export default function Datenschutz() {
             </div>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading}>Zwecke der Verarbeitung</h2>
+            <h2>Zwecke der Verarbeitung</h2>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -206,8 +205,8 @@ export default function Datenschutz() {
               </div>
               Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -215,8 +214,8 @@ export default function Datenschutz() {
               </div>
               Büro- und Organisationsverfahren.
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -224,8 +223,8 @@ export default function Datenschutz() {
               </div>
               Kontaktanfragen und Kommunikation.
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -233,8 +232,8 @@ export default function Datenschutz() {
               </div>
               Erbringung vertragliche Leistungen und Kundenservice.
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -244,7 +243,7 @@ export default function Datenschutz() {
             </div>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m13">
+            <h2 id="m13">
               Maßgebliche Rechtsgrundlagen
             </h2>
             <p>
@@ -257,8 +256,8 @@ export default function Datenschutz() {
               Datenschutzerklärung mit.
             </p>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -271,8 +270,8 @@ export default function Datenschutz() {
                 einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -289,8 +288,8 @@ export default function Datenschutz() {
                 betroffenen Person erfolgen.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -304,8 +303,8 @@ export default function Datenschutz() {
                 Verpflichtung erforderlich, der der Verantwortliche unterliegt.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -344,7 +343,7 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m27">
+            <h2 id="m27">
               Sicherheitsmaßnahmen
             </h2>
             <p>
@@ -374,7 +373,7 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m25">
+            <h2 id="m25">
               Übermittlung von personenbezogenen Daten
             </h2>
             <p>
@@ -391,7 +390,7 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m24">
+            <h2 id="m24">
               Datenverarbeitung in Drittländern
             </h2>
             <p>
@@ -421,7 +420,7 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m134">
+            <h2 id="m134">
               Einsatz von Cookies
             </h2>
             <p>
@@ -444,8 +443,8 @@ export default function Datenschutz() {
               </strong>
             </p>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -460,8 +459,8 @@ export default function Datenschutz() {
                 geschlossen hat.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -477,8 +476,8 @@ export default function Datenschutz() {
                 werden, in einem solchen Cookie gespeichert werden.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -489,8 +488,8 @@ export default function Datenschutz() {
                 werden von uns selbst gesetzt.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -505,8 +504,8 @@ export default function Datenschutz() {
                 verarbeiten.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -522,8 +521,8 @@ export default function Datenschutz() {
                 Nutzereingaben zu speichern oder aus Gründen der Sicherheit).
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -620,8 +619,8 @@ export default function Datenschutz() {
               Browser, System und verwendeten Endgerät gespeichert.
             </p>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -634,8 +633,8 @@ export default function Datenschutz() {
                 IP-Adressen).
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -646,8 +645,8 @@ export default function Datenschutz() {
                 Webseitenbesucher, Nutzer von Onlinediensten).
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -661,7 +660,7 @@ export default function Datenschutz() {
             </div>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m317">
+            <h2 id="m317">
               Geschäftliche Leistungen
             </h2>
             <p>
@@ -710,8 +709,8 @@ export default function Datenschutz() {
               der jeweiligen Drittanbieter oder Plattformen.
             </p>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -725,8 +724,8 @@ export default function Datenschutz() {
                 Laufzeit, Kundenkategorie).
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -737,8 +736,8 @@ export default function Datenschutz() {
                 und Vertragspartner.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -751,8 +750,8 @@ export default function Datenschutz() {
                 Beantwortung von Anfragen.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -767,7 +766,7 @@ export default function Datenschutz() {
             </div>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m225">
+            <h2 id="m225">
               Bereitstellung des Onlineangebotes und Webhosting
             </h2>
             <p>
@@ -808,8 +807,8 @@ export default function Datenschutz() {
               Server und ihre Stabilität sicherzustellen.
             </p>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -823,8 +822,8 @@ export default function Datenschutz() {
                 IP-Adressen).
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -835,8 +834,8 @@ export default function Datenschutz() {
                 Webseitenbesucher, Nutzer von Onlinediensten).
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -847,8 +846,8 @@ export default function Datenschutz() {
                 Onlineangebotes und Nutzerfreundlichkeit.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -861,7 +860,7 @@ export default function Datenschutz() {
             </div>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m12">
+            <h2 id="m12">
               Löschung von Daten
             </h2>
             <p>
@@ -890,7 +889,7 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m15">
+            <h2 id="m15">
               Änderung und Aktualisierung der Datenschutzerklärung
             </h2>
             <p>
@@ -911,7 +910,7 @@ export default function Datenschutz() {
             </p>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m10">
+            <h2 id="m10">
               Rechte der betroffenen Personen
             </h2>
             <p>
@@ -919,8 +918,8 @@ export default function Datenschutz() {
               die sich insbesondere aus Art. 15 bis 21 DSGVO ergeben:
             </p>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -943,8 +942,8 @@ export default function Datenschutz() {
                 </strong>
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -955,8 +954,8 @@ export default function Datenschutz() {
                 das Recht, erteilte Einwilligungen jederzeit zu widerrufen.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -970,8 +969,8 @@ export default function Datenschutz() {
                 gesetzlichen Vorgaben.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -984,8 +983,8 @@ export default function Datenschutz() {
                 betreffenden unrichtigen Daten zu verlangen.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -1001,8 +1000,8 @@ export default function Datenschutz() {
                 eine Einschränkung der Verarbeitung der Daten zu verlangen.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -1016,8 +1015,8 @@ export default function Datenschutz() {
                 Übermittlung an einen anderen Verantwortlichen zu fordern.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -1036,7 +1035,7 @@ export default function Datenschutz() {
             </div>
           </div>
           <div className={utilStyle.container}>
-            <h2 className={utilStyle.subHeading} id="m42">
+            <h2 id="m42">
               Begriffsdefinitionen
             </h2>
             <p>
@@ -1048,8 +1047,8 @@ export default function Datenschutz() {
               Verständnis dienen. Die Begriffe sind alphabetisch sortiert.
             </p>
 
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -1070,8 +1069,8 @@ export default function Datenschutz() {
                 sind.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -1085,8 +1084,8 @@ export default function Datenschutz() {
                 Daten entscheidet, bezeichnet.
               </p>
             </div>
-            <div className={style.listRow}>
-              <div className={style.listIcon}>
+            <div className={utilStyle.listRow}>
+              <div className={utilStyle.listIcon}>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   color="#153351"
@@ -1110,7 +1109,7 @@ export default function Datenschutz() {
             </p>
           </div>
         </div>
-      </Layout>
+      </main>
     </>
   );
 }
