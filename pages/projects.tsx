@@ -31,7 +31,7 @@ export default function Projects({
           <p className={utilStyle.pageDescription}>
             Things I have worked on. <br />
             Most of the projects were created with friends, for example,
-            activity. But many of them are looking forward to see some new
+            entel and activity. But each of them is looking forward to see some new
             contributors 😀
           </p>
         </div>
