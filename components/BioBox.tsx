@@ -16,12 +16,12 @@ export function BioBox({
   locationLink,
 }: BioItem) {
   return (
-    <div className={style.mainDiv}>
-      <h2 className={style.headingDate}>
+    <div className={style.bioBox}>
+      <h2 className={style.date}>
         {startDate}
         {endDate && " - " + endDate}
       </h2>
-      <p className={style.totalDescription}>
+      <p className={style.description}>
         {jobDescription}
         {locationLink ? (
           <a href={locationLink} className={style.locationLink}>

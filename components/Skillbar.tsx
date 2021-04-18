@@ -7,7 +7,7 @@ interface SkillProps {
 export default function Skill({ skillName, skillLevel }: SkillProps) {
   const levelWidth = (skillLevel * 21) / 100;
   return (
-    <div className={style.mainDiv}>
+    <div className={style.container}>
       <i className={style.skillName}>{skillName}</i>
       <progress value={skillLevel} max={100} className={style.progress} />
     </div>

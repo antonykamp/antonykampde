@@ -8,12 +8,12 @@ export interface AwardItem {
 
 export function AwardBox({ date, title, location, locationLink }: AwardItem) {
   return (
-    <div className={style.mainDiv}>
-      <p className={style.awardLocation}>
+    <div className={style.awardBox}>
+      <p className={style.location}>
         {locationLink ? <a href={locationLink}>{location}</a> : location}
       </p>
-      <p className={style.awardTitle}>{title}</p>
-      <p className={style.awardDate}>{date}</p>
+      <p className={style.title}>{title}</p>
+      <p className={style.date}>{date}</p>
     </div>
   );
 }

@@ -1,28 +1,15 @@
-.roundedImage {
-  border-radius: 100px;
-}
-
-.title {
-  font-weight: 800;
-  font-size: 3rem;
-  line-height: 3rem;
-  padding-bottom: 0.5rem;
-}
-
-.menu {
-  font-size: 1.7rem;
+.header {
+  padding: 0.5rem;
+  align-items: center;
+  vertical-align: bottom;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  max-width: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.menuItem {
-  text-align: center;
-}
-.menuItem:hover {
-  font-weight: bold;
-  transition: font-weight 4 ease-in;
+.roundedImage {
+  border-radius: 100px;
 }
 
 .titleMenu {
@@ -45,18 +32,27 @@
   }
 }
 
-.header {
-  padding: 0.5rem;
-  align-items: center;
-  vertical-align: bottom;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.title {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  text-align: left;
 }
 
-.main {
+.menu {
+  font-size: 1.7rem;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-around;
+  max-width: 400px;
+}
+
+.menuItem {
+  text-align: center;
+}
+.menuItem:hover {
+  font-weight: bold;
+  transition: font-weight 4 ease-in;
 }

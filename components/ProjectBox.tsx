@@ -54,7 +54,7 @@ export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
       {sections.map((section) => {
         return (
           <div className={style.sectionObject}>
-            <h3 className={style.sectionName}>{section.title}</h3>
+            <h3>{section.title}</h3>
             <p>{section.content}</p>
           </div>
         );

@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import { Project, ProjectBox } from "../components/ProjectBox";
 import path from "path";
 import { getAllProjectData } from "../lib/GetProjectData";
@@ -27,9 +26,9 @@ export default function Contributions({
         <title>Antony Kamp | Contributions</title>
         <meta name="description" content="Things I have contributed to." />
       </Head>
-      <Layout>
+      <main>
         <div className={utilStyle.container}>
-          <h1 className={utilStyle.heading}>Contributions</h1>
+          <h1>Contributions</h1>
           <p className={utilStyle.pageDescription}>
             Things I have contributed to.
             <br />
@@ -59,7 +58,7 @@ export default function Contributions({
             })}
           </div>
         </div>
-      </Layout>
+      </main>
     </>
   );
 }

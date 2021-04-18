@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import { ProjectBoxHome, Project } from "../components/ProjectBox";
 import Skill from "../components/Skillbar";
 import { BioBox, BioItem } from "../components/BioBox";
@@ -32,9 +31,9 @@ export default function Home({
           scientific software projects and study IT-Systems Engineering B.Sc. at the HPI, Potsdam."
         />
       </Head>
-      <Layout>
+      <main>
         <div className={utilStyle.container}>
-          <h2 className={utilStyle.heading}>Hi! I'm Antony 👋</h2>
+          <h1>Hi! I'm Antony 👋</h1>
           <p className={utilStyle.pageDescription}>
             I'm currently studying IT-Systems Engineering B.Sc. at the Hasso
             Plattner Insitute, University Potsdam. I also work on various
@@ -45,7 +44,7 @@ export default function Home({
         </div>
 
         <div className={utilStyle.container}>
-          <h2 className={utilStyle.subHeading}>Skills</h2>
+          <h2>Skills</h2>
           <div className={style.skillBars}>
             <Skill skillName="Motivation" skillLevel={100} />
             <Skill skillName="Learning Speed" skillLevel={90} />
@@ -63,7 +62,7 @@ export default function Home({
           </div>
         </div>
         <div className={utilStyle.container}>
-          <h2 className={utilStyle.subHeading}>Education {" & "} Work</h2>
+          <h2>Education {" & "} Work</h2>
           {bio.map((bioItem) => {
             return (
               <div
@@ -87,7 +86,7 @@ export default function Home({
         </div>
 
         <div className={utilStyle.container}>
-          <h2 className={utilStyle.subHeading}>Awards</h2>
+          <h2>Awards</h2>
           {awards.map((awardItem) => {
             return (
               <div
@@ -109,7 +108,7 @@ export default function Home({
             );
           })}
         </div>
-      </Layout>
+      </main>
     </>
   );
 }

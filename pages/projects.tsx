@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import { Project, ProjectBox } from "../components/ProjectBox";
 import path from "path";
 import { getAllProjectData } from "../lib/GetProjectData";
@@ -26,9 +25,9 @@ export default function Projects({
         <title>Antony Kamp | Projects</title>
         <meta name="description" content="Things I have worked on." />
       </Head>
-      <Layout>
+      <main>
         <div className={utilStyle.container}>
-          <h1 className={utilStyle.heading}>Projects</h1>
+          <h1>Projects</h1>
           <p className={utilStyle.pageDescription}>
             Things I have worked on. <br />
             Most of the projects were created with friends, for example,
@@ -56,7 +55,7 @@ export default function Projects({
             })}
           </div>
         </div>
-      </Layout>
+      </main>
     </>
   );
 }

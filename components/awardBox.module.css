@@ -1,32 +1,32 @@
-.mainDiv {
+.awardBox {
   text-align: left;
 }
 
-.awardDate {
-  color: gray;
+.location {
+  font-weight: 700;
 }
 
-.awardTitle {
+.title {
   color: #153351;
 }
 
 @media (min-width: 960px) {
-  .awardTitle {
+  .title {
     font-size: 1.4rem;
   }
-  .awardLocation {
+  .location {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 960px) {
-  .awardTitle {
+  .title {
     font-size: 1.3rem;
   }
-  .awardLocation {
+  .location {
     font-size: 1.4rem;
   }
 }
 
-.awardLocation {
-  font-weight: 700;
+.date {
+  color: gray;
 }

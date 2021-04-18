@@ -1,4 +1,30 @@
+.projectOutherBox {
+  border-radius: 10px;
+  border-width: 2px;
+  width: 24rem;
+}
+
+.projectInnerBox {
+  padding: 1rem;
+  text-align: left;
+}
+
+.boxTail {
+  overflow: hidden;
+  height: auto;
+  padding-top: 0.5rem;
+}
+
+.boxHome {
+  text-align: left;
+  width: 24rem;
+  border-radius: 10px;
+  border-width: 2px;
+  margin: 1rem;
+}
+
 .projectName {
+  text-align: left;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -15,15 +41,8 @@
   margin-right: 0.3rem;
 }
 
-.boxTail {
-  overflow: hidden;
-  height: auto;
-  padding-top: 0.5rem;
-}
-
-.sectionName {
-  font-size: 1.5rem;
-  font-weight: 600;
+.sectionObject {
+  margin-bottom: 0.7rem;
 }
 
 .linkRow {
@@ -37,33 +56,6 @@
   margin-right: 0.3rem;
 }
 
-.projectOutherBox {
-  border-radius: 10px;
-  border-width: 2px;
-  width: 24rem;
-}
-
-.projectInnerBox {
-  padding: 1rem;
-  text-align: left;
-}
-
-.toggleTail {
-  overflow: hidden;
-  transition: max-height 1s ease;
-}
-
-.clickToExpand {
-  background-color: #edf2f7;
-  align-self: center;
-  text-align: center;
-  color: #273f5c;
-}
-
-.clickToExpand:hover {
-  background-color: #e2e8f0;
-}
-
 .linkBox {
   display: flex;
   flex-direction: column;
@@ -75,16 +67,4 @@
 
 .linkBox:hover {
   background-color: #e2e8f0;
-}
-
-.boxHome {
-  text-align: left;
-  width: 24rem;
-  border-radius: 10px;
-  border-width: 2px;
-  margin: 1rem;
-}
-
-.sectionObject {
-  margin-bottom: 0.7rem;
 }
