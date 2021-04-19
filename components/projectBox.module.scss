@@ -1,21 +1,12 @@
-.projectOutherBox {
+.projectBox {
   border-radius: 10px;
   border-width: 2px;
   width: 24rem;
-}
-
-.projectInnerBox {
   padding: 1rem;
   text-align: left;
 }
 
-.boxTail {
-  overflow: hidden;
-  height: auto;
-  padding-top: 0.5rem;
-}
-
-.boxHome {
+.projectBoxHome {
   text-align: left;
   width: 24rem;
   border-radius: 10px;
@@ -35,11 +26,12 @@
   flex-wrap: wrap;
   padding-top: 0.3rem;
   padding-bottom: 0.5rem;
+
+  .tag {
+    margin-right: 0.3rem;
+  }
 }
 
-.tag {
-  margin-right: 0.3rem;
-}
 
 .sectionObject {
   margin-bottom: 0.7rem;
@@ -50,10 +42,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 0.5rem;
-}
-
-.link {
-  margin-right: 0.3rem;
+  
+  .link {
+    margin-right: 0.3rem;
+  }
 }
 
 .linkBox {
@@ -63,8 +55,8 @@
   background-color: #edf2f7;
   text-align: center;
   height: 2rem;
-}
 
-.linkBox:hover {
-  background-color: #e2e8f0;
+  &:hover{
+    background-color: #e2e8f0;
+  }
 }

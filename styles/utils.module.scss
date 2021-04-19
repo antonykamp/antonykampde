@@ -1,19 +1,19 @@
 @media (min-width: 960px) {
-  .pageDescription {
-    font-size: 1.4rem;
-  }
-
   .container {
     margin: 2rem;
+
+    .pageDescription {
+      font-size: 1.4rem;
+    }
   }
 }
 @media (max-width: 960px) {
-  .pageDescription {
-    font-size: 1.2rem;
-  }
-
   .container {
     margin: 1.5rem;
+
+    .pageDescription {
+      font-size: 1.2rem;
+    }
   }
 }
 

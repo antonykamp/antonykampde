@@ -2,8 +2,8 @@ import { Project, ProjectBox } from "../components/ProjectBox";
 import path from "path";
 import { getAllProjectData } from "../lib/GetProjectData";
 import { InferGetStaticPropsType } from "next";
-import listUtilStyle from "../styles/projectListUtils.module.css";
-import utilStyle from "../styles/utils.module.css";
+import listUtilStyle from "../styles/projectListUtils.module.scss";
+import utilStyle from "../styles/utils.module.scss";
 import Head from "next/head";
 
 export default function Contributions({

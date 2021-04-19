@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { dom } from "@fortawesome/fontawesome-svg-core";
-import styles from "./footer.module.css";
+import styles from "./footer.module.scss";
 
 export default function Footer() {
   return (

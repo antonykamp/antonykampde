@@ -1,4 +1,4 @@
-import style from "./projectBadge.module.css";
+import style from "./projectBadge.module.scss";
 
 export type ProjectBadge = keyof typeof ProjectBadges;
 const ProjectBadges = {

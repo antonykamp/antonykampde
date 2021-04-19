@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import style from "./datenschutz.module.css";
-import utilStyle from "../styles/legalUtils.module.css";
+import utilStyle from "../styles/legalUtils.module.scss";
 import Head from "next/head";
 
 export default function Datenschutz() {

@@ -13,12 +13,13 @@
   justify-content: flex-start;
   font-size: 0.75rem;
   color: white;
+
+  &:hover{
+    color: #153351;
+  }
+  
+  .linkName {
+    margin-left: 0.5rem;
+  }
 }
 
-.linkObject:hover {
-  color: #153351;
-}
-
-.linkName {
-  margin-left: 0.5rem;
-}
