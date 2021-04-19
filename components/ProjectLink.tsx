@@ -1,4 +1,4 @@
-import style from "./projectLink.module.css";
+import style from "./projectLink.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 import { faBookOpen, faArchive } from "@fortawesome/free-solid-svg-icons";

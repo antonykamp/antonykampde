@@ -1,4 +1,4 @@
-import style from "./bioBox.module.css";
+import style from "./bioBox.module.scss";
 
 export interface BioItem {
   startDate: string;
@@ -17,10 +17,10 @@ export function BioBox({
 }: BioItem) {
   return (
     <div className={style.bioBox}>
-      <h2 className={style.date}>
+      <h3>
         {startDate}
         {endDate && " - " + endDate}
-      </h2>
+      </h3>
       <p className={style.description}>
         {jobDescription}
         {locationLink ? (

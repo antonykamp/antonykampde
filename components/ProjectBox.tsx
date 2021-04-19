@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./projectBox.module.css";
+import style from "./projectBox.module.scss";
 import Link from "next/link";
 import { ProjectBadge } from "./ProjectBadge";
 import { ProjectLink } from "./ProjectLink";
@@ -24,14 +24,16 @@ interface LinkName {
   link: string;
 }
 
-interface ProjectHeadProps {
-  name: string;
-  tags: ProjectBadge[];
-  introduction: string;
-}
-export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
+
+export function ProjectBox({
+  name,
+  tags,
+  introduction,
+  sections,
+  links,
+}: Project) {
   return (
-    <div>
+    <div className={style.projectBox}>
       <h2 className={style.projectName}>{name}</h2>
       <div className={style.tagRow}>
         {tags.map((tag) => {
@@ -39,18 +41,6 @@ export function ProjectHead({ name, tags, introduction }: ProjectHeadProps) {
         })}
       </div>
       <p>{introduction}</p>
-    </div>
-  );
-}
-
-interface ProjectTailProps {
-  sections: ProjectSection[];
-  links: LinkName[];
-  isOpen: boolean;
-}
-export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
-  return (
-    <div className={style.boxTail}>
       {sections.map((section) => {
         return (
           <div className={style.sectionObject}>
@@ -68,25 +58,7 @@ export function ProjectTail({ sections, links, isOpen }: ProjectTailProps) {
   );
 }
 
-export function ProjectBox({
-  name,
-  tags,
-  introduction,
-  sections,
-  links,
-}: Project) {
-  const [isOpen, setisOpen] = useState(false);
-  return (
-    <div className={style.projectOutherBox}>
-      <div className={style.projectInnerBox}>
-        <ProjectHead name={name} tags={tags} introduction={introduction} />
-        <ProjectTail sections={sections} links={links} isOpen={isOpen} />
-      </div>
-    </div>
-  );
-}
-
-interface ProjectBoxHome {
+interface ProjectBoxHomeProps {
   name: string;
   tags: ProjectBadge[];
   introduction: string;
@@ -97,11 +69,17 @@ export function ProjectBoxHome({
   tags,
   introduction,
   isProject = false,
-}: ProjectBoxHome) {
+}: ProjectBoxHomeProps) {
   return (
-    <div className={style.boxHome}>
+    <div className={style.projectBoxHome}>
       <div style={{ padding: "1rem" }}>
-        <ProjectHead name={name} tags={tags} introduction={introduction} />
+        <h2 className={style.projectName}>{name}</h2>
+        <div className={style.tagRow}>
+          {tags.map((tag) => {
+            return <ProjectBadge badge={tag} />;
+          })}
+        </div>
+        <p>{introduction}</p>
       </div>
       <Link href={"/" + (isProject ? "projects" : "contributions")}>
         <a>

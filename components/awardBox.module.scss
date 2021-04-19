@@ -1,0 +1,23 @@
+.awardBox {
+  text-align: left;
+  
+  .title {
+    color: #153351;
+  }
+  
+  @media (min-width: 960px) {
+    .title {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 960px) {
+    .title {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .date {
+    color: gray;
+  }
+}
+
