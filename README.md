@@ -4,7 +4,7 @@
 [![Website antonykamp.de](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](antonykamp.de)
 [![Build Status](https://travis-ci.com/antonykamp/antonykampde.svg?token=KLyVgPMWyiqQ3RqyF6uP&branch=master)](https://travis-ci.com/antonykamp/antonykampde)
 
-This repository includes a minimal nextJS template I've created for my website [antonykamp.de](https://antonykamp.de). It's a [Next.js](https://nextjs.org) project written in TypeScript that uses the component library [chakra-iu](https://chakra-ui.com/) and icon from [FontAwesome](https://fontawesome.com/).
+This repository includes a minimal nextJS template I've created for my website [antonykamp.de](https://antonykamp.de). It's a [Next.js](https://nextjs.org) project written in TypeScript that uses [Sass](https://sass-lang.com/) and icon from [FontAwesome](https://fontawesome.com/).
 
 ## Getting Started
 
