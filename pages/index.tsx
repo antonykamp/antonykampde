@@ -9,8 +9,8 @@ import { getBioData } from "../lib/GetBioData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AwardBox, AwardItem } from "../components/AwardBox";
 import { getAwardData } from "../lib/GetAwardData";
-import style from "./index.module.css";
-import utilStyle from "../styles/utils.module.css";
+import style from "./index.module.scss";
+import utilStyle from "../styles/utils.module.scss";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import Head from "next/head";
 import { InferGetStaticPropsType } from "next";
