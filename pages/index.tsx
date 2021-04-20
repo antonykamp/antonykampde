@@ -61,7 +61,7 @@ export default function Home({
             <ProjectBoxHome {...project} />
           </div>
         </div>
-        <div className={utilStyle.container}>
+        <div className={utilStyle.smallContainer}>
           <h2>Education {" & "} Work</h2>
           {bio.map((bioItem) => {
             return (
@@ -85,7 +85,7 @@ export default function Home({
           })}
         </div>
 
-        <div className={utilStyle.container}>
+        <div className={utilStyle.smallContainer}>
           <h2>Awards</h2>
           {awards.map((awardItem) => {
             return (

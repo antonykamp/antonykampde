@@ -58,7 +58,7 @@ h3 {
     font-size: 2.3rem;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -70,7 +70,7 @@ h3 {
     font-size: 2rem;
   }
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -82,9 +82,9 @@ main {
   align-self: center;
   justify-content: flex-start;
   text-align: center;
-  width: 100vw;
+  width: 95vw;
 
   * {
-    max-width: min(100vw, 1300px);
+    max-width: min(95vw, 1300px);
   }
 }

@@ -6,7 +6,7 @@ import Head from "next/head";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <div style={{minHeight: "100vh", display: "flex", flexDirection: "column"}}>
+    <div style={{minHeight: "100vh", display: "flex", flexDirection: "column", maxWidth: "100vw"}}>
       <Head>
         <link rel="icon" href="/favicon.svg" />
         <meta charSet="utf-8" />

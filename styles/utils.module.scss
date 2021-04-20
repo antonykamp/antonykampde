@@ -1,5 +1,5 @@
 @media (min-width: 960px) {
-  .container {
+  .container, .smallContainer {
     margin: 2rem;
 
     .pageDescription {
@@ -8,7 +8,7 @@
   }
 }
 @media (max-width: 960px) {
-  .container {
+  .container, .smallContainer {
     margin: 1.5rem;
 
     .pageDescription {
@@ -17,6 +17,11 @@
   }
 }
 
+.smallContainer {
+  width: min(95vw, 600px);
+  text-align: left;
+}
+
 .pageDescription {
-  max-width: min(100vw, 1000px);
+  max-width: min(95vw, 1000px);
 }
