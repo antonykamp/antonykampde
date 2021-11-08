@@ -4,12 +4,12 @@
     "tags": ["python", "science"],
     "sections": [
       {
-        "title": "Goal",
+        "title": "Goal of the project",
         "content": "Quantum devices used to implement spin qubits in semiconductors are challenging to tune and characterize. AutoDot is a statistical approach to tuning such devices flexibly."
       },
       {
-        "title": "My work",
-        "content": "I'm working on a new unit vector sampler using the Covariance Matrix Adaptation Evolution Strategy."
+        "title": "Future",
+        "content": "We're currently working on a new unit vector sampler using the Covariance Matrix Adaptation Evolution Strategy."
       }
     ],
     "links": [

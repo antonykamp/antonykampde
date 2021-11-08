@@ -116,11 +116,11 @@ export default function Home({
 export async function getStaticProps(context) {
   const contributionFile = path.join(
     process.cwd(),
-    "public/contributions/autodot.json"
+    "public/contributions/symfit.json"
   );
   const contribution = getProjectData(contributionFile);
 
-  const projectFile = path.join(process.cwd(), "public/projects/elea.json");
+  const projectFile = path.join(process.cwd(), "public/projects/autodot.json");
   const project = getProjectData(projectFile);
 
   const bioFile = path.join(process.cwd(), "public/bio.json");
