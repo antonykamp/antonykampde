@@ -1,0 +1,28 @@
+{
+    "name": "ELEA",
+    "introduction": "Build your own Evolutionary Algorithm",
+    "tags": ["javascript"],
+    "sections": [
+      {
+        "title": "Goal of the project",
+        "content": "You can use ELEA to demonstrate evolutionary behaviours to students to help their understanding. Create your own algorithms quickly using Blockly."
+      },
+      {
+        "title": "Future",
+        "content": "In the future, we're working on plotting the course of different variables to compare algorithms."
+      }
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/HPI-ELEA/elea"
+      },
+      {
+        "name": "website",
+        "link": "https://hpi-elea.netlify.app/"
+      }
+    ],
+    "isProject": true,
+    "prio": 4
+  }
+  
