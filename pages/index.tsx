@@ -3,7 +3,6 @@ import Skill from "../components/Skillbar";
 import { BioBox, BioItem } from "../components/BioBox";
 import { getProjectData } from "../lib/GetProjectData";
 import _symfit from "../public/contributions/symfit.json";
-import _activity from "../public/projects/activity.json";
 import path from "path";
 import { getBioData } from "../lib/GetBioData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
