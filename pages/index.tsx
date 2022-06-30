@@ -48,9 +48,9 @@ export default function Home({
             <Skill skillName="Motivation" skillLevel={100} />
             <Skill skillName="Learning Speed" skillLevel={90} />
             <Skill skillName="Technical Writing" skillLevel={50} />
-            <Skill skillName="Python" skillLevel={65} />
-            <Skill skillName="C++" skillLevel={70} />
-            <Skill skillName="WebDev" skillLevel={50} />
+            <Skill skillName="Python" skillLevel={75} />
+            <Skill skillName="C++" skillLevel={60} />
+            <Skill skillName="WebDev" skillLevel={75} />
           </div>
         </div>
 
