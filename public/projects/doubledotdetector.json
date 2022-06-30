@@ -1,0 +1,24 @@
+{
+    "name": "DoubleDotDetector",
+    "introduction": "Detection of Doubledots using Viola-Jones Algorithm",
+    "tags": ["python", "science"],
+    "sections": [
+      {
+        "title": "Goal of the project",
+        "content": "You can generate and prepare data containing doubledots to train the Viola-Jones Algorithm, with which you can detect them in pictures. This project is in cooperation with the University of Oxford."
+      },
+      {
+        "title": "Future",
+        "content": "In the future, we're working on scalable stages in the Viola-Jones Algorithm."
+      }
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/antonykamp/doubledotdetector"
+      }
+    ],
+    "isProject": true,
+    "prio": 5
+  }
+  
