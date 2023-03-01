@@ -43,7 +43,7 @@ export default function Home({
             also some of my preferences.
           </p>
         </div>
-
+        {/**
         <div className={utilStyle.container}>
           <h2>Skills</h2>
           <div className={style.skillBars}>
@@ -55,7 +55,7 @@ export default function Home({
             <Skill skillName="WebDev" skillLevel={75} />
           </div>
         </div>
-
+ */}
         <div className={utilStyle.container}>
           <div className={style.projectAndContribution}>
             <ProjectBoxHome {...contribution} />
@@ -121,7 +121,10 @@ export async function getStaticProps(context) {
   );
   const contribution = getProjectData(contributionFile);
 
-  const projectFile = path.join(process.cwd(), "public/projects/autodot.json");
+  const projectFile = path.join(
+    process.cwd(),
+    "public/projects/krisenchat.json"
+  );
   const project = getProjectData(projectFile);
 
   const bioFile = path.join(process.cwd(), "public/bio.json");
