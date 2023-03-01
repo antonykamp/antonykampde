@@ -28,8 +28,12 @@ const ProjectBadges = {
   },
   javascript: {
     backgroundColor: "#efd71d",
-    fontColor: "234E52"
-  }
+    fontColor: "234E52",
+  },
+  ruby: {
+    backgroundColor: "#E53E3E",
+    fontColor: "#FFF5F5",
+  },
 };
 
 export function ProjectBadge({ badge }: { badge: keyof typeof ProjectBadges }) {

@@ -1,0 +1,19 @@
+{
+  "name": "bookkeeper-portal",
+  "introduction": "A web application for keeping track of items and loaning them out.",
+  "tags": ["ruby"],
+  "sections": [
+    {
+      "title": "Goal of the project",
+      "content": "Created in the Scalable Software Engineering course at the HPI in Potsdam. Therefore, the main goal was learning working in a big team and scrum."
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/hpi-swt2/bookkeeper-portal-blue"
+    }
+  ],
+  "isProject": true,
+  "prio": 3
+}

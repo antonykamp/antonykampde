@@ -1,0 +1,23 @@
+{
+  "name": "krisenchat gGmbH",
+  "introduction": "In a crisis? Text us. We'll help you!",
+  "tags": ["blitz", "typescript"],
+  "sections": [
+    {
+      "title": "Goal of the project",
+      "content": "We want to support young adults by offering chat support by professionals. Our team work especially on the infrastructure and the tools for our counsellors."
+    },
+    {
+      "title": "Future",
+      "content": "In the future, we want to improve the webapp for our counsellors to make counselling more valuable."
+    }
+  ],
+  "links": [
+    {
+      "name": "krisenchat.de",
+      "link": "https://krisenchat.de"
+    }
+  ],
+  "isProject": true,
+  "prio": 3
+}

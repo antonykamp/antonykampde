@@ -1,24 +1,23 @@
 {
-    "name": "antonykamp.de",
-    "introduction": "A minimal nextJS template you're looking at.",
-    "tags": ["nextjs", "typescript"],
-    "sections": [
-      {
-        "title": "Future",
-        "content": "I want to polish this website that you can use it as a nextjs-template in the future. This includes adding unit tests and elements of the GitHub GraphQL API to the contributions page."
-      }
-    ],
-    "links": [
-      {
-        "name": "GitHub",
-        "link": "github.com/antonykamp/antonykampde"
-      },
-      {
-        "name": "antonykamp.de",
-        "link": "https://quizbot.readthedocs.io"
-      }
-    ],
-    "isProject": true,
-    "prio": 3
-  }
-  
+  "name": "antonykamp.de",
+  "introduction": "A minimal nextJS template you're looking at.",
+  "tags": ["nextjs", "typescript"],
+  "sections": [
+    {
+      "title": "Future",
+      "content": "I want to polish this website that you can use it as a nextjs-template in the future. This includes adding unit tests and elements of the GitHub GraphQL API to the contributions page."
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/antonykamp/antonykampde"
+    },
+    {
+      "name": "antonykamp.de",
+      "link": "https://antonykamp.de"
+    }
+  ],
+  "isProject": true,
+  "prio": 3
+}

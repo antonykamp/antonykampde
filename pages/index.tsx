@@ -10,7 +10,7 @@ import { AwardBox, AwardItem } from "../components/AwardBox";
 import { getAwardData } from "../lib/GetAwardData";
 import style from "./index.module.scss";
 import utilStyle from "../styles/utils.module.scss";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import { InferGetStaticPropsType } from "next";
 
@@ -35,10 +35,12 @@ export default function Home({
           <h1>Hi! I'm Antony 👋</h1>
           <p className={utilStyle.pageDescription}>
             I'm currently studying IT-Systems Engineering B.Sc. at the Hasso
-            Plattner Insitute, University Potsdam. I also work on various
-            exciting scientific software projects like symfit, sfepy, and
-            GPflow. Producing short films and advertisements and doing
-            gymnastics with friends are also some of my preferences.
+            Plattner Insitute, University Potsdam. I am currently employed by
+            the non-profit company krisenchat gGmbH, which provides simple
+            psychological counselling for young adults. Working on exciting
+            scientific software projects like symfit, sfepy, and GPflow,
+            producing short films and advertisements and doing gymnastics are
+            also some of my preferences.
           </p>
         </div>
 
