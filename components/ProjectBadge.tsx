@@ -34,6 +34,10 @@ const ProjectBadges = {
     backgroundColor: "#E53E3E",
     fontColor: "#FFF5F5",
   },
+  java: {
+    backgroundColor: "#FED7E2",
+    fontColor: "#702459",
+  },
 };
 
 export function ProjectBadge({ badge }: { badge: keyof typeof ProjectBadges }) {

@@ -1,22 +1,38 @@
 [
   {
-    "startDate": "July 2022",
-    "jobDescription": "Working Student Software Engineering",
+    "startDate": "June 2024",
+    "jobDescription": "Working Student Technical Project Manager",
     "location": "krisenchat gGmbH, Berlin",
     "locationLink": "https://krisenchat.de/"
   },
   {
-    "startDate": "October 2020",
-    "jobDescription": "Studying IT-Systems Engineering B.Sc.",
+    "startDate": "October 2023",
+    "jobDescription": "Studying IT-Systems Engineering M.Sc.",
     "location": "HPI Potsdam",
     "locationLink": "https://hpi.de/"
   },
+
+  {
+    "startDate": "July 2022",
+    "endDate": "September 2023",
+    "jobDescription": "Working Student Software Engineering",
+    "location": "krisenchat gGmbH, Berlin",
+    "locationLink": "https://krisenchat.de/"
+  },
+
   {
     "startDate": "January 2021",
     "jobDescription": "Research Assistant",
     "endDate": "June 2022",
     "location": "HPI Potsdam - Algorithm Engineering Group",
     "locationLink": "https://hpi.de/forschung/fachgebiete/algorithm-engineering.html"
+  },
+  {
+    "startDate": "October 2020",
+    "endDate": "May 2024",
+    "jobDescription": "Studying IT-Systems Engineering B.Sc.",
+    "location": "HPI Potsdam",
+    "locationLink": "https://hpi.de/"
   },
   {
     "startDate": "October 2018",

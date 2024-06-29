@@ -1,0 +1,24 @@
+{
+  "name": "graalpy",
+  "introduction": "GraalVM Implementation of Python",
+  "tags": ["python", "java", "science"],
+  "sections": [
+    {
+      "title": "Goal",
+      "content": "GraalPy is a high-performance implementation of the Python language for the JVM built on GraalVM."
+    },
+    {
+      "title": "My work",
+      "content": "I worked on identifying compatibility issues with the CPython implementation and using java classes in python code."
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "color": "gray",
+      "link": "https://github.com/oracle/graalpython",
+      "logo": ["github"]
+    }
+  ],
+  "prio": 3
+}

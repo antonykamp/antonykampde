@@ -1,0 +1,27 @@
+{
+  "name": "fCM.js",
+  "introduction": "Modeling Tool with Design-Time Support for Fragment-Based Case Management.",
+  "tags": ["javascript"],
+  "sections": [
+    {
+      "title": "Goal of the project",
+      "content": "It aims at supporting users at design time by providing a joint, visual user interface for all artifacts and by integrating automated guideline checking based on fCM guidelines."
+    },
+    {
+      "title": "My work",
+      "content": "We added a execution interface to the tool, which allows users to execute their models and see the results in real-time."
+    },
+    {
+      "title": "Future",
+      "content": "In the future, we want to export and import Object Centric Event Logs."
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/bptlab/fCM-runtime-support"
+    }
+  ],
+  "isProject": true,
+  "prio": 5
+}

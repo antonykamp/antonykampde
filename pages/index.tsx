@@ -34,13 +34,13 @@ export default function Home({
         <div className={utilStyle.container}>
           <h1>Hi! I'm Antony 👋</h1>
           <p className={utilStyle.pageDescription}>
-            I'm currently studying IT-Systems Engineering B.Sc. at the Hasso
+            I'm currently studying IT-Systems Engineering M.Sc. at the Hasso
             Plattner Insitute, University Potsdam. I am currently employed by
             the non-profit company krisenchat gGmbH, which provides simple
             psychological counselling for young adults. Working on exciting
-            scientific software projects like symfit, sfepy, and GPflow,
-            producing short films and advertisements and doing gymnastics are
-            also some of my preferences.
+            scientific software projects like GraalVM, symfit, GPflow, producing
+            short films and advertisements and doing gymnastics are also some of
+            my preferences.
           </p>
         </div>
         {/**
@@ -117,7 +117,7 @@ export default function Home({
 export async function getStaticProps(context) {
   const contributionFile = path.join(
     process.cwd(),
-    "public/contributions/symfit.json"
+    "public/contributions/graalpy.json"
   );
   const contribution = getProjectData(contributionFile);
 
