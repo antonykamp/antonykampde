@@ -9,7 +9,7 @@
     },
     {
       "title": "My work",
-      "content": "I worked on identifying compatibility issues with the CPython implementation and using java classes in python code."
+      "content": "I worked on identifying compatibility issues with the CPython implementation and using java classes in python code. Moreover, I worked on implementing CRUD operations for a register of Python types as equivalents for Java classes."
     }
   ],
   "links": [
