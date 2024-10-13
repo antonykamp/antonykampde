@@ -1,4 +1,3 @@
-import { useState } from "react";
 import style from "./projectBox.module.scss";
 import Link from "next/link";
 import { ProjectBadge } from "./ProjectBadge";
@@ -24,7 +23,6 @@ interface LinkName {
   link: string;
 }
 
-
 export function ProjectBox({
   name,
   tags,
@@ -37,13 +35,13 @@ export function ProjectBox({
       <h2 className={style.projectName}>{name}</h2>
       <div className={style.tagRow}>
         {tags.map((tag) => {
-          return <ProjectBadge badge={tag} />;
+          return <ProjectBadge key={tag} badge={tag} />;
         })}
       </div>
       <p>{introduction}</p>
       {sections.map((section) => {
         return (
-          <div className={style.sectionObject}>
+          <div key={section.title} className={style.sectionObject}>
             <h3>{section.title}</h3>
             <p>{section.content}</p>
           </div>
@@ -51,7 +49,7 @@ export function ProjectBox({
       })}
       <div className={style.linkRow}>
         {links.map(({ name, link }) => {
-          return <ProjectLink name={name} link={link} />;
+          return <ProjectLink key={link} name={name} link={link} />;
         })}
       </div>
     </div>
@@ -76,17 +74,15 @@ export function ProjectBoxHome({
         <h2 className={style.projectName}>{name}</h2>
         <div className={style.tagRow}>
           {tags.map((tag) => {
-            return <ProjectBadge badge={tag} />;
+            return <ProjectBadge key={tag} badge={tag} />;
           })}
         </div>
         <p>{introduction}</p>
       </div>
       <Link href={"/" + (isProject ? "projects" : "contributions")}>
-        <a>
-          <div className={style.linkBox}>
-            <p>see more {isProject ? "projects" : "contributions"}</p>
-          </div>
-        </a>
+        <div className={style.linkBox}>
+          <p>see more {isProject ? "projects" : "contributions"}</p>
+        </div>
       </Link>
     </div>
   );

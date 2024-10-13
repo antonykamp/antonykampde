@@ -42,12 +42,12 @@ export default function Footer() {
       </div>
       <p className={styles.footerText}>
         {"© 2021 Antony Kamp. "}
-        <Link href="impressum">
-          <a className={styles.footerLink}>Impressum</a>
+        <Link href="impressum" className={styles.footerLink}>
+          Impressum
         </Link>
         {". "}
-        <Link href="datenschutz">
-          <a className={styles.footerLink}>Datenschutz</a>
+        <Link href="datenschutz" className={styles.footerLink}>
+          Datenschutz
         </Link>
         {" Powered by "}
         <a className={styles.footerLink} href="https://nextjs.org/">

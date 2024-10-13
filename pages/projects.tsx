@@ -11,7 +11,9 @@ export default function Projects({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const COLUMN_NUM = 3;
   let columns: Project[][] = [];
-  projectProjects = projectProjects.sort((p1, p2) => (p2.prio || 0) - (p1.prio || 0))
+  projectProjects = projectProjects.sort(
+    (p1, p2) => (p2.prio || 0) - (p1.prio || 0)
+  );
   for (let col = 0; col < COLUMN_NUM; col++) {
     columns.push(
       projectProjects.filter((project) => {
@@ -30,16 +32,16 @@ export default function Projects({
           <h1>Projects</h1>
           <p className={utilStyle.pageDescription}>
             Things I have worked on. <br />
-            Most of the projects were created with friends, for example,
-            entel and activity. But each of them is looking forward to see some new
+            Most of the projects were created with friends, for example, entel
+            and activity. But each of them is looking forward to see some new
             contributors 😀
           </p>
         </div>
         <div className={utilStyle.container}>
           <div className={listUtilStyle.projectTable}>
-            {columns.map((column) => {
+            {columns.map((column, index) => {
               return (
-                <div className={listUtilStyle.projectColumn}>
+                <div key={index} className={listUtilStyle.projectColumn}>
                   {column.map((contribution) => {
                     return (
                       <div

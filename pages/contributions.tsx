@@ -11,7 +11,9 @@ export default function Contributions({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const COLUMN_NUM = 3;
   let columns: Project[][] = [];
-  contributionProjects = contributionProjects.sort((c1, c2) => (c2.prio || 0) - (c1.prio || 0))
+  contributionProjects = contributionProjects.sort(
+    (c1, c2) => (c2.prio || 0) - (c1.prio || 0)
+  );
   for (let col = 0; col < COLUMN_NUM; col++) {
     columns.push(
       contributionProjects.filter((project) => {
@@ -40,9 +42,9 @@ export default function Contributions({
         </div>
         <div className={utilStyle.container}>
           <div className={listUtilStyle.projectTable}>
-            {columns.map((column) => {
+            {columns.map((column, index) => {
               return (
-                <div className={listUtilStyle.projectColumn}>
+                <div key={index} className={listUtilStyle.projectColumn}>
                   {column.map((contribution) => {
                     return (
                       <div

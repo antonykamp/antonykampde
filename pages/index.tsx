@@ -64,9 +64,10 @@ export default function Home({
         </div>
         <div className={utilStyle.smallContainer}>
           <h2>Education {" & "} Work</h2>
-          {bio.map((bioItem) => {
+          {bio.map((bioItem, index) => {
             return (
               <div
+                key={index}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -88,9 +89,10 @@ export default function Home({
 
         <div className={utilStyle.smallContainer}>
           <h2>Awards</h2>
-          {awards.map((awardItem) => {
+          {awards.map((awardItem, index) => {
             return (
               <div
+                key={index}
                 style={{
                   display: "flex",
                   alignItems: "center",
