@@ -1,9 +1,16 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import style from "./datenschutz.module.css";
-import utilStyle from "../styles/legalUtils.module.scss";
-import Head from "next/head";
+import utilStyle from "../../styles/legalUtils.module.scss";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Datenschutz",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function Datenschutz() {
   const tableOfContents = [
@@ -26,12 +33,7 @@ export default function Datenschutz() {
     { name: "Begriffsdefinitionen", ref: "#m42" },
   ];
   return (
-    <>
-      <Head>
-        <title>Antony Kamp | Datenschutz</title>
-        <meta name="robots" content="noindex" />
-      </Head>
-      <main>
+    <main>
         <div className={utilStyle.container}>
           <h1>Datenschutzerklärung</h1>
           <div className={utilStyle.container}>
@@ -939,6 +941,5 @@ export default function Datenschutz() {
           </div>
         </div>
       </main>
-    </>
   );
 }
