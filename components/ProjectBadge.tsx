@@ -38,6 +38,18 @@ const ProjectBadges = {
     backgroundColor: "#FED7E2",
     fontColor: "#702459",
   },
+  trpc: {
+    backgroundColor: "#DBEAFE",
+    fontColor: "#1E3A8A",
+  },
+  gcp: {
+    backgroundColor: "#FEEBC8",
+    fontColor: "#7B341E",
+  },
+  terraform: {
+    backgroundColor: "#E9D8FD",
+    fontColor: "#44337A",
+  },
 };
 
 export function ProjectBadge({ badge }: { badge: keyof typeof ProjectBadges }) {

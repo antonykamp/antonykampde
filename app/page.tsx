@@ -14,13 +14,13 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 export default async function Home() {
   const contributionFile = path.join(
     process.cwd(),
-    "public/contributions/graalpy.json"
+    "public/contributions/graalpy.json",
   );
   const contribution = getProjectData(contributionFile);
 
   const projectFile = path.join(
     process.cwd(),
-    "public/projects/krisenchat.json"
+    "public/projects/krisenchat.json",
   );
   const project = getProjectData(projectFile);
 
@@ -35,13 +35,18 @@ export default async function Home() {
       <div className={utilStyle.container}>
         <h1>Hi! I'm Antony 👋</h1>
         <p className={utilStyle.pageDescription}>
-          I'm currently studying IT-Systems Engineering M.Sc. at the Hasso
-          Plattner Insitute, University Potsdam. I am currently employed by the
-          non-profit company krisenchat gGmbH, which provides simple
-          psychological counselling for young adults. Working on exciting
-          scientific software projects like GraalVM, symfit, GPflow, producing
-          short films and advertisements and doing gymnastics are also some of
-          my preferences.
+          I'm a backend-leaning fullstack engineer and technical project manager
+          at the non-profit krisenchat gGmbH, where we build the platform that
+          connects young people in crisis with professional counsellors.
+          Recently I led the replacement of our legacy auth with BetterAuth
+          (migrating the full user base without downtime) and designed a
+          state-machine-driven chatbot waiting room that routes helpseekers to
+          counsellors. I also contribute to our GCP migration and
+          Terraform-based infrastructure. Alongside work, I'm finishing my M.Sc.
+          in IT-Systems Engineering at HPI / University of Potsdam, where my
+          thesis explores AI coding agents for performance optimisation in
+          GraalVM's Truffle DSL. On the side I enjoy contributing to scientific
+          open-source projects, making short films, and gymnastics.
         </p>
       </div>
       {/**

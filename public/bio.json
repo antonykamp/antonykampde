@@ -1,36 +1,28 @@
 [
   {
-    "startDate": "June 2024",
-    "jobDescription": "Working Student Technical Project Manager",
+    "startDate": "July 2022",
+    "jobDescription": "Fullstack Engineer & Technical Project Manager",
     "location": "krisenchat gGmbH, Berlin",
     "locationLink": "https://krisenchat.de/"
   },
   {
     "startDate": "October 2023",
-    "jobDescription": "Studying IT-Systems Engineering M.Sc.",
+    "endDate": "September 2026",
+    "jobDescription": "Studying IT-Systems Engineering M.Sc.\nThesis: 'Enhancing AI Coding Agents for Truffle DSL Performance Optimization.'",
     "location": "HPI Potsdam",
     "locationLink": "https://hpi.de/"
   },
-
-  {
-    "startDate": "July 2022",
-    "endDate": "September 2023",
-    "jobDescription": "Working Student Software Engineering",
-    "location": "krisenchat gGmbH, Berlin",
-    "locationLink": "https://krisenchat.de/"
-  },
-
   {
     "startDate": "January 2021",
-    "jobDescription": "Research Assistant",
     "endDate": "June 2022",
+    "jobDescription": "Research Assistant",
     "location": "HPI Potsdam - Algorithm Engineering Group",
     "locationLink": "https://hpi.de/forschung/fachgebiete/algorithm-engineering.html"
   },
   {
     "startDate": "October 2020",
-    "endDate": "May 2024",
-    "jobDescription": "Studying IT-Systems Engineering B.Sc.",
+    "endDate": "May 2023",
+    "jobDescription": "Studying IT-Systems Engineering B.Sc.\nThesis: 'Architecture and Development of a REST API for Simulating Train Traffic'",
     "location": "HPI Potsdam",
     "locationLink": "https://hpi.de/"
   },

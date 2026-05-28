@@ -1,15 +1,19 @@
 {
   "name": "krisenchat gGmbH",
   "introduction": "In a crisis? Text us. We'll help you!",
-  "tags": ["blitz", "typescript"],
+  "tags": ["nextjs", "typescript", "trpc", "python", "gcp", "terraform"],
   "sections": [
     {
       "title": "Goal of the project",
-      "content": "We want to support young adults by offering chat support by professionals. Our team work especially on the infrastructure and the tools for our counsellors."
+      "content": "We support young people in crisis by offering chat counselling with professionals. Our team builds the platform and tooling that connects helpseekers with counsellors."
+    },
+    {
+      "title": "What I work on",
+      "content": "Led the replacement of our legacy authentication with BetterAuth, migrating the full user base without downtime. Designed and built a state-machine-driven chatbot waiting room that routes helpseekers to the right counsellor. Contributing to our migration to GCP and our Terraform-based infrastructure-as-code setup."
     },
     {
       "title": "Future",
-      "content": "In the future, we want to improve the webapp for our counsellors to make counselling more valuable."
+      "content": "Continuing to harden the platform and improve the counsellor webapp to make counselling more effective."
     }
   ],
   "links": [

@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  
+
+  .description {
+    white-space: pre-line;
+  }
+
   .locationLink {
     color: #273f5c;
 

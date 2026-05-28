@@ -41,7 +41,7 @@ export default function Footer() {
         </a>
       </div>
       <p className={styles.footerText}>
-        {"© 2021 Antony Kamp. "}
+        {`© ${new Date().getFullYear()} Antony Kamp. `}
         <Link href="impressum" className={styles.footerLink}>
           Impressum
         </Link>
