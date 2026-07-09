@@ -1,0 +1,27 @@
+{
+  "name": "Master's Thesis: AI Agents for Truffle Performance Optimization",
+  "introduction": "A layered knowledge enhancement architecture for AI coding agents to guide GraalVM/Truffle language developers through performance optimization.",
+  "tags": ["ai", "graalvm", "truffle", "claude"],
+  "sections": [
+    {
+      "title": "Abstract",
+      "content": "Building Domain-Specific Languages with the Truffle framework on GraalVM promises competitive performance, but achieving it requires Truffle-specific profiling and compiler knowledge that most language developers lack. Profiling tools like the CPU Sampler, Trace Compilation, and the Ideal Graph Visualizer demand deep framework expertise to interpret, leaving developers without effective guidance during performance optimization. Existing AI coding agents attempt to address this gap but optimize through static reasoning without benchmark validation, often introducing regressions rather than improvements."
+    },
+    {
+      "title": "Architecture",
+      "content": "The thesis proposes a layered knowledge enhancement architecture for AI coding agents with three levels: Tool Assistance via agent skills for individual profiling tools, Process Assistance via sub-agents for optimization process phases, and Full Orchestration. The architecture is implemented as a Claude Code plugin combining agent skills, sub-agents, and an MCP server for the Are We Fast Yet benchmark framework, incorporating domain knowledge sourced from a contextual inquiry interview with a Truffle expert."
+    },
+    {
+      "title": "Results",
+      "content": "On a Degraded Implementation, the Enhanced Agent achieved a significantly higher speedup (U=96, p<0.001, r=0.92). Both user study participants resolved a performance issue with the Enhanced Agent while neither succeeded with the manual CLI setup. These findings establish that AI agents equipped with domain-specific profiling knowledge can lower the barrier for language developers to achieve competitive performance."
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/hpi-swa-lab/cc-truffle-performance-plugin"
+    }
+  ],
+  "isProject": true,
+  "prio": 10
+}
