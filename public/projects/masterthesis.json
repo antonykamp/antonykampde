@@ -18,6 +18,10 @@
   ],
   "links": [
     {
+      "name": "Thesis",
+      "link": "https://antonykamp.de/masters-thesis.pdf"
+    },
+    {
       "name": "GitHub",
       "link": "https://github.com/hpi-swa-lab/cc-truffle-performance-plugin"
     }
