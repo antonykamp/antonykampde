@@ -61,13 +61,19 @@ interface ProjectBoxHomeProps {
   tags: ProjectBadge[];
   introduction: string;
   isProject?: boolean;
+  cta?: { label: string; link: string };
 }
 export function ProjectBoxHome({
   name,
   tags,
   introduction,
   isProject = false,
+  cta,
 }: ProjectBoxHomeProps) {
+  const ctaLabel = cta
+    ? cta.label
+    : "see more " + (isProject ? "projects" : "contributions");
+  const ctaLink = cta ? cta.link : "/" + (isProject ? "projects" : "contributions");
   return (
     <div className={style.projectBoxHome}>
       <div style={{ padding: "1rem" }}>
@@ -79,9 +85,9 @@ export function ProjectBoxHome({
         </div>
         <p>{introduction}</p>
       </div>
-      <Link href={"/" + (isProject ? "projects" : "contributions")}>
+      <Link href={ctaLink}>
         <div className={style.linkBox}>
-          <p>see more {isProject ? "projects" : "contributions"}</p>
+          <p>{ctaLabel}</p>
         </div>
       </Link>
     </div>

@@ -59,7 +59,10 @@ export default async function Home() {
  */}
       <div className={utilStyle.container}>
         <div className={style.projectAndContribution}>
-          <ProjectBoxHome {...contribution} />
+          <ProjectBoxHome
+            {...contribution}
+            cta={{ label: "read the thesis", link: "/masters-thesis.pdf" }}
+          />
           <ProjectBoxHome {...project} />
         </div>
       </div>
