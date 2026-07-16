@@ -14,7 +14,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 export default async function Home() {
   const contributionFile = path.join(
     process.cwd(),
-    "public/contributions/graalpy.json",
+    "public/projects/masterthesis.json",
   );
   const contribution = getProjectData(contributionFile);
 
