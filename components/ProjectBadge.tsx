@@ -50,6 +50,22 @@ const ProjectBadges = {
     backgroundColor: "#E9D8FD",
     fontColor: "#44337A",
   },
+  ai: {
+    backgroundColor: "#E9D8FD",
+    fontColor: "#44337A",
+  },
+  graalvm: {
+    backgroundColor: "#FED7D7",
+    fontColor: "#822727",
+  },
+  truffle: {
+    backgroundColor: "#FEEBC8",
+    fontColor: "#7B341E",
+  },
+  claude: {
+    backgroundColor: "#FEEBC8",
+    fontColor: "#7B341E",
+  },
 };
 
 export function ProjectBadge({ badge }: { badge: keyof typeof ProjectBadges }) {
