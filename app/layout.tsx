@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Antony Kamp",
   },
   description:
-    "Hi! I'm Antony 👋 I work on various exciting scientific software projects and study IT-Systems Engineering M.Sc. at the HPI, Potsdam.",
+    "Hi! I'm Antony 👋 Software Consultant at TNG Technology Consulting in Berlin, backend-leaning fullstack engineer with a focus on infrastructure.",
   keywords: [
     "Antony Kamp",
     "Developer",
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "Science",
     "HPI",
     "Potsdam",
+    "Berlin",
+    "TNG Technology Consulting",
     "Jena",
   ],
   authors: [{ name: "Antony Kamp" }],

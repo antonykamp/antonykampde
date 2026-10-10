@@ -5,15 +5,11 @@
   "sections": [
     {
       "title": "Goal of the project",
-      "content": "We support young people in crisis by offering chat counselling with professionals. Our team builds the platform and tooling that connects helpseekers with counsellors."
+      "content": "We support young people in crisis by offering chat counselling with professionals. From 2022 to 2026, I was part of the team building the platform and tooling that connect helpseekers with counsellors."
     },
     {
-      "title": "What I work on",
-      "content": "Led the replacement of our legacy authentication with BetterAuth, migrating the full user base without downtime. Designed and built a state-machine-driven chatbot waiting room that routes helpseekers to the right counsellor. Contributing to our migration to GCP and our Terraform-based infrastructure-as-code setup."
-    },
-    {
-      "title": "Future",
-      "content": "Continuing to harden the platform and improve the counsellor webapp to make counselling more effective."
+      "title": "What I worked on",
+      "content": "Led the replacement of our legacy authentication with BetterAuth, migrating the full user base without downtime. Designed and built a state-machine-driven chatbot waiting room that routes helpseekers to the right counsellor. Contributed to our migration to GCP and our Terraform-based infrastructure-as-code setup."
     }
   ],
   "links": [

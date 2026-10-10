@@ -66,6 +66,14 @@ const ProjectBadges = {
     backgroundColor: "#FEEBC8",
     fontColor: "#7B341E",
   },
+  kubernetes: {
+    backgroundColor: "#E0E7FF",
+    fontColor: "#3730A3",
+  },
+  aws: {
+    backgroundColor: "#FEF3C7",
+    fontColor: "#78350F",
+  },
 };
 
 export function ProjectBadge({ badge }: { badge: keyof typeof ProjectBadges }) {

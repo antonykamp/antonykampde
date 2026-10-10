@@ -18,10 +18,7 @@ export default async function Home() {
   );
   const contribution = getProjectData(contributionFile);
 
-  const projectFile = path.join(
-    process.cwd(),
-    "public/projects/krisenchat.json",
-  );
+  const projectFile = path.join(process.cwd(), "public/projects/tng.json");
   const project = getProjectData(projectFile);
 
   const bioFile = path.join(process.cwd(), "public/bio.json");
@@ -35,13 +32,13 @@ export default async function Home() {
       <div className={utilStyle.container}>
         <h1>Hi! I'm Antony 👋</h1>
         <p className={utilStyle.pageDescription}>
-          I'm a backend-leaning fullstack engineer and technical project
-          manager at krisenchat gGmbH, building the platform that connects
-          young people in crisis with professional counsellors. Alongside
-          work, I'm finishing my M.Sc. in IT-Systems Engineering at HPI /
-          University of Potsdam, with a thesis on AI coding agents for
-          GraalVM's Truffle DSL. On the side: scientific open-source, short
-          films, and gymnastics.
+          I'm a Software Consultant at TNG Technology Consulting in Berlin.
+          I'm a backend-leaning fullstack engineer with a soft spot for
+          infrastructure: cloud platforms, infrastructure-as-code,
+          distributed systems, and API design. I completed my M.Sc. in
+          IT-Systems Engineering at HPI / University of Potsdam with a thesis
+          on AI coding agents for GraalVM's Truffle DSL. On the side:
+          scientific open-source, short films, and gymnastics.
         </p>
       </div>
       {/**

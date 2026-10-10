@@ -1,0 +1,23 @@
+{
+  "name": "TNG Technology Consulting GmbH",
+  "introduction": "A values-based IT consulting partnership focused on software development, AI, and DevOps & cloud since 2001.",
+  "tags": ["kubernetes", "java", "aws"],
+  "sections": [
+    {
+      "title": "About TNG",
+      "content": "Founded near Munich and now with offices across Germany, TNG works with large national and international companies on software development, artificial intelligence, and DevOps & cloud."
+    },
+    {
+      "title": "My role",
+      "content": "Software Consultant in Berlin, focused on backend systems and cloud infrastructure."
+    }
+  ],
+  "links": [
+    {
+      "name": "tngtech.com",
+      "link": "https://www.tngtech.com/"
+    }
+  ],
+  "isProject": true,
+  "prio": 11
+}

@@ -1,6 +1,13 @@
 [
   {
+    "startDate": "October 2026",
+    "jobDescription": "Software Consultant",
+    "location": "TNG Technology Consulting GmbH, Berlin",
+    "locationLink": "https://www.tngtech.com/"
+  },
+  {
     "startDate": "July 2022",
+    "endDate": "September 2026",
     "jobDescription": "Fullstack Engineer & Technical Project Manager",
     "location": "krisenchat gGmbH, Berlin",
     "locationLink": "https://krisenchat.de/"
